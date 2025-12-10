@@ -1,0 +1,14 @@
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/bin/Debug/net8.0/EntityLayer.deps.json
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/bin/Debug/net8.0/EntityLayer.runtimeconfig.json
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/bin/Debug/net8.0/EntityLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/bin/Debug/net8.0/EntityLayer.pdb
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.csproj.AssemblyReference.cache
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.AssemblyInfo.cs
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/refint/EntityLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.pdb
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.genruntimeconfig.cache
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/ref/EntityLayer.dll
