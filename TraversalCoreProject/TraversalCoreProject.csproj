@@ -27,4 +27,64 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\about.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\css\style-starter.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\fonts\fontawesome-webfont.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\fonts\fontawesome-webfont.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\fonts\fontawesome-webfont.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\fonts\fontawesome-webfont.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\fonts\fontawesome-webfont.woff2" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\fonts\FontAwesome.otf" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\banner1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\banner2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\banner3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\banner4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\c1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\c2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\c3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\c4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\close.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\date.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\dots.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\down.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g10.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g5.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g6.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g7.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g8.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\g9.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\img-sprite.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\team1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\team2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\team3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\images\team4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\all.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\app.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\bootstrap.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\jquery-3.3.1.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\jquery.countup.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\jquery.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\jquery.waypoints.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\jquery.zoomslider.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\lightbox-plus-jquery.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\main.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\modernizr-2.6.2.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\owl.carousel.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\popper.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\assets\js\theme-change.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\blog-single.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\blog.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\contact.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\index.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\landing-single.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\liberty-license-W3Layouts.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\pricing.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\Traversal-Starter\services.html" />
+    </ItemGroup>
+
 </Project>

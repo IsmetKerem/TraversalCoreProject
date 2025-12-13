@@ -5,9 +5,9 @@ using EntityLayer.Concrete;
 
 namespace DataAccessLayer.EntityFramework;
 
-public class EfFeatureDal: GenericRepository<Feature>,IFeature
+public class EfFeatureDalDal: GenericRepository<Feature>,IFeatureDal
 {
-    public EfFeatureDal (Context context) : base(context)
+    public EfFeatureDalDal (Context context) : base(context)
     {}
     
 }

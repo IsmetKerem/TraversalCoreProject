@@ -12,3 +12,4 @@
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.pdb
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.genruntimeconfig.cache
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/ref/EntityLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/EntityLayer/obj/Debug/net8.0/EntityLayer.sourcelink.json

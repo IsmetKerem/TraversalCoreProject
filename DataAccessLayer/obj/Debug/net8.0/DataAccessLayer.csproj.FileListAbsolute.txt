@@ -15,3 +15,4 @@
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.pdb
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.genruntimeconfig.cache
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/DataAccessLayer/obj/Debug/net8.0/ref/DataAccessLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DataAccessLayer/obj/Debug/net8.0/DataAccessLayer.sourcelink.json
