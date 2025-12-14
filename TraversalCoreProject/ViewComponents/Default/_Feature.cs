@@ -14,7 +14,8 @@ public class _Feature:ViewComponent
     }
     public IViewComponentResult Invoke()
     {
-        var values = _featureService.TGetList();
-        return View(values);
+        //var values = _featureService.TGetList();
+        //ViewBag.image1=_featureService.getl
+        return View();
     }
 }

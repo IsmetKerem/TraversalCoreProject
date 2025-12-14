@@ -46,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0UGFydGlhbC9fU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/Shared/Components/_Feature/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0ZlYXR1cmUvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/Shared/Components/_PopularDestinations/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1BvcHVsYXJEZXN0aW5hdGlvbnMvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/Shared/Components/_Statistics/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1N0YXRpc3RpY3MvRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/Shared/Components/_SubAbout/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1N1YkFib3V0L0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/Shared/Components/_Testimonials/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX1Rlc3RpbW9uaWFscy9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/Shared/Error.cshtml]
