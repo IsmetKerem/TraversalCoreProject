@@ -32,4 +32,9 @@ public class GenericRepository<T>:  IGenericDal<T> where T: class
     {
         return _context.Set<T>().ToList();
     }
+
+    public T GetById(int id)
+    {
+        return _context.Set<T>().Find(id);
+    }
 }

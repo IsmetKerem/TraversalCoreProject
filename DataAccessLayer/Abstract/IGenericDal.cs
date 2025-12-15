@@ -6,5 +6,6 @@ public interface IGenericDal<T>
     void Update(T t);
     void Delete(T t);
     List<T> GetList();
+    T GetById(int id);
 
 }

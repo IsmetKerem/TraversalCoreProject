@@ -35,6 +35,9 @@ public class DestinationManager: IDestinationService
 
     public Destination TGetByID(int id)
     {
-        throw new NotImplementedException();
+        return _destinationDal.GetById(id);
+        
+       
+
     }
 }
