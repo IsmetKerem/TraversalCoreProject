@@ -27,6 +27,7 @@ builder.Services.AddScoped<IGuideDal, EfGuideDal>();
 builder.Services.AddScoped<INewsletterDal, EfNewsletterDal>();
 builder.Services.AddScoped<ISubAboutDal, EfSubAboutDal>();
 builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
+builder.Services.AddScoped<ICommentDal, EfCommentDal>();
 
 // -------------------------------------------------------------------------
 // 3. Business Layer (Manager) Bağımlılıkları (IService -> ...Manager)
@@ -41,6 +42,7 @@ builder.Services.AddScoped<IFeatureService, FeatureManager>();
 //builder.Services.AddScoped<INewsletterService, NewsletterManager>();
 builder.Services.AddScoped<ISubAboutService, SubAboutManager>();
 builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
+builder.Services.AddScoped<ICommentService, CommentManager>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

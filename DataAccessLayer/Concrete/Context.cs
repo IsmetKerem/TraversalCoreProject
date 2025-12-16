@@ -1,9 +1,10 @@
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.Concrete
 {
-    public class Context : DbContext
+    public class Context : IdentityDbContext<AppUser,AppRole,int>
     {
         // DbContextOptions DI'dan gelecek
         public Context(DbContextOptions<Context> options) : base(options)

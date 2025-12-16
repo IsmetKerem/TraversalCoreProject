@@ -23,6 +23,7 @@ public class DestinationController : Controller
 
     public IActionResult DestinationDetails(int id)
     {
+        ViewBag.id = id;
         var values = _destinationService.TGetByID(id);
         return View(values);
     }
