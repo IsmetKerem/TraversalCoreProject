@@ -2,8 +2,10 @@ using DataAccessLayer.Concrete;
 using DataAccessLayer.Abstract;        // Interface'ler (IDal)
 using DataAccessLayer.EntityFramework; // Ef...Dal Sınıfları
 using BusinessLayer.Abstract;          // Servis Interface'leri (IService)
-using BusinessLayer.Concrete;          // Manager Sınıfları
+using BusinessLayer.Concrete;
+using EntityLayer.Concrete; // Manager Sınıfları
 using Microsoft.EntityFrameworkCore;
+using TraversalCoreProject.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,8 +48,25 @@ builder.Services.AddScoped<ICommentService, CommentManager>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<Context>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
+builder.Services.AddMvc(config =>
+{
+    var policy = new Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .Build();
+    config.Filters.Add(new Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter(policy));
+});
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Login/SignIn/";
+    // HTTP üzerinde çalışırken çerezin reddedilmesini engeller:
+    options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+    options.Cookie.Name = "TraversalCookie";
+});
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -60,8 +79,13 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication(); // Önce kim olduğunu kontrol et
 app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+);
 
 app.MapControllerRoute(
     name: "default",
