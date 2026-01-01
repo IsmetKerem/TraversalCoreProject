@@ -40,11 +40,14 @@ builder.Services.AddScoped<IAboutService, AboutManager>();
 builder.Services.AddScoped<IDestinationService, DestinationManager>();
 builder.Services.AddScoped<IFeatureService, FeatureManager>();
 //builder.Services.AddScoped<IFeature2Service, Feature2Manager>();
-//builder.Services.AddScoped<IGuideService, GuideManager>();
+builder.Services.AddScoped<IGuideService, GuideManager>();
 //builder.Services.AddScoped<INewsletterService, NewsletterManager>();
 builder.Services.AddScoped<ISubAboutService, SubAboutManager>();
 builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
 builder.Services.AddScoped<ICommentService, CommentManager>();
+// Business katmanındaki servislerin ve managerların kaydı
+builder.Services.AddScoped<IReservationService, ReservationManager>();
+builder.Services.AddScoped<IReservationDal, EfReservationDal>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -82,6 +85,10 @@ app.UseRouting();
 app.UseAuthentication(); // Önce kim olduğunu kontrol et
 app.UseAuthorization();
 
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+);
 app.MapControllerRoute(
     name: "areas",
     pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
