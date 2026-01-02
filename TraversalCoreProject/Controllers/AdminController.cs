@@ -14,4 +14,22 @@ public class AdminController : Controller
     {
         return PartialView();
     }
+
+    public PartialViewResult PartialSideBar()
+    {
+        return PartialView();
+    }
+    public PartialViewResult PartialNavBar()
+    {
+        return PartialView();
+    }
+
+    public PartialViewResult PartialFooter()
+    {
+        return PartialView();
+    }
+    public PartialViewResult PartialScript()
+    {
+        return PartialView();
+    }
 }
