@@ -20,7 +20,7 @@ public class CommentManager:ICommentService
 
     public void TDelete(Comment t)
     {
-        throw new NotImplementedException();
+        _commentDal.Delete(t);
     }
 
     public void TUpdate(Comment t)
@@ -30,7 +30,7 @@ public class CommentManager:ICommentService
 
     public List<Comment> TGetList()
     {
-        throw new NotImplementedException();
+        return _commentDal.GetList();
     }
 
     public List<Comment> TGetDestinationById(int id)
@@ -38,9 +38,14 @@ public class CommentManager:ICommentService
         return _commentDal.GetListByFilter(x=>x.DestinationID == id);
     }
 
+    public List<Comment> TGetListCommentWithDestination()
+    {
+        return _commentDal.GetListCommentWithDestination();
+    }
+
     public Comment TGetByID(int id)
     {
-        throw new NotImplementedException();
+        return _commentDal.GetById(id);
     }
 
 

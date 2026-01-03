@@ -1,0 +1,35 @@
+@using EntityLayer.Concrete
+@model List<AppUser>
+@{
+    Layout="_AdminLayout";
+    int sayac = 0;
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ad-Soyad</th>
+        <th>Kullanıcı Adı</th>
+        <th>Mail</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+        <th>Yorumlar</th>
+        <th>Tur Geçmişi</th>
+        
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            @{ sayac = sayac + 1;}
+            <td>@sayac</td>
+            <td>@item.Name @item.Surname</td>
+            <td>@item.UserName</td>
+            <td>@item.Email</td>
+            <td><a href="/Admin/Comment/DeleteUser/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Admin/Comment/EditUser/@item.Id" class="btn btn-outline-success">Düzenle</a></td>
+            <td><a href="/Admin/Comment/CommentUser/@item.Id" class="btn btn-outline-info">Yorumlar</a></td>
+            <td><a href="/Admin/Comment/ReservationUser/@item.Id" class="btn btn-outline-primary">Tur Geçmişi</a></td>
+        </tr>
+    }
+</table>
+<a href="/Admin/User/AddUser" class="btn btn-outline-primary">Yeni Kullanıcı Kaydı</a>
