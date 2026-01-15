@@ -1,0 +1,273 @@
+2026-01-15T19:07:18.7478380+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-15T19:07:18.7562120+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-15T19:07:18.7569460+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-15T19:07:18.7573020+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-15T19:07:19.3960950+03:00 0HNIKA0KD50UA:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-15T19:07:20.8204220+03:00 0HNIKA0KD50UA:00000001 [INF] Executed DbCommand ("104"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2026-01-15T19:07:20.9345460+03:00 0HNIKA0KD50UA:00000001 [INF] Executed DbCommand ("37"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-15T19:07:20.9842190+03:00 0HNIKA0KD50UA:00000001 [INF] Executed DbCommand ("38"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-15T19:07:20.9958210+03:00 0HNIKA0KD50UA:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:07:21.0203090+03:00 0HNIKA0KD50UA:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:07:35.1398610+03:00 0HNIKA0KD50UA:00000002 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:07:35.1415790+03:00 0HNIKA0KD50UA:00000002 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:07:36.3067230+03:00 0HNIKA0KD50UA:00000003 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:07:36.3077110+03:00 0HNIKA0KD50UA:00000003 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:07:44.2588080+03:00 0HNIKA0KD50UA:00000004 [INF] 15.01.2026 00:00:00 Privacy sayfası çağrıldı. (532f3e0c)
+2026-01-15T19:11:34.8828490+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-15T19:11:34.8901930+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-15T19:11:34.8903670+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-15T19:11:34.8903750+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-15T19:11:35.4761860+03:00 0HNIKA30NC5O4:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-15T19:11:35.6152300+03:00 0HNIKA30NC5O4:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:11:35.6153810+03:00 0HNIKA30NC5O4:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:11:38.4405810+03:00 0HNIKA30NC5O4:00000002 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:11:38.4406280+03:00 0HNIKA30NC5O4:00000002 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:11:40.9158070+03:00 0HNIKA30NC5O4:00000003 [INF] Executed DbCommand ("110"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[ReservationID], [r].[AppUserId], [r].[Description], [r].[DestinationID], [r].[PersonCount], [r].[ReservationDate], [r].[Status], [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Reservations] AS [r]
+INNER JOIN [Destinations] AS [d] ON [r].[DestinationID] = [d].[DestinationID]
+INNER JOIN [AspNetUsers] AS [a] ON [r].[AppUserId] = [a].[Id]
+WHERE [r].[Status] = N'Onaylandı' AND [r].[AppUserId] = @__id_0" (0723d8ff)
+2026-01-15T19:11:43.5323320+03:00 0HNIKA30NC5O5:00000001 [INF] Executed DbCommand ("163"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Description], [g].[Image], [g].[InstagramUrl], [g].[Name], [g].[Status], [g].[TwitterUrl]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-15T19:11:50.0028260+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-15T19:26:09.8837700+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-15T19:26:09.8898800+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-15T19:26:09.8900380+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-15T19:26:09.8900440+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-15T19:26:10.3892880+03:00 0HNIKAB5F3HRS:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-15T19:26:10.4829340+03:00 0HNIKAB5F3HRS:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:26:10.4830620+03:00 0HNIKAB5F3HRS:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:26:17.2248680+03:00 0HNIKAB5F3HRS:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+OfficeOpenXml.LicenseNotSetException: Please set the license using one of the methods on the static property ExcelPackage.License. See https://epplussoftware.com/developers/licensenotsetexception for more information
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor()
+   at TraversalCoreProject.Controllers.ExcelController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Controllers/ExcelController.cs:line 11
+   at lambda_method43(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-15T19:27:06.4749530+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-15T19:30:58.8085490+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-15T19:30:58.8148840+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-15T19:30:58.8150610+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-15T19:30:58.8150670+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-15T19:30:59.0154400+03:00 0HNIKADRG0IGC:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-15T19:30:59.1191790+03:00 0HNIKADRG0IGC:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:30:59.1192840+03:00 0HNIKADRG0IGC:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:31:04.3394930+03:00 0HNIKADRG0IGF:00000002 [INF] Executed DbCommand ("346"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2026-01-15T19:31:05.2411240+03:00 0HNIKADRG0IGC:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at TraversalCoreProject.Controllers.ExcelController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Controllers/ExcelController.cs:line 11
+   at lambda_method211(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-15T19:32:10.0157510+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-15T19:32:12.9114340+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-15T19:32:12.9183140+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-15T19:32:12.9185040+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-15T19:32:12.9185110+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-15T19:32:13.5506730+03:00 0HNIKAEHMKVU2:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-15T19:32:13.6312100+03:00 0HNIKAEHMKVU2:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:32:13.6313160+03:00 0HNIKAEHMKVU2:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:32:20.1246470+03:00 0HNIKAEHMKVU2:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at TraversalCoreProject.Controllers.ExcelController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Controllers/ExcelController.cs:line 11
+   at lambda_method37(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-15T19:32:58.7568630+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-15T19:35:09.7281710+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-15T19:35:09.7340760+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-15T19:35:09.7342460+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-15T19:35:09.7342540+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-15T19:35:09.9289990+03:00 0HNIKAG68V5AG:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-15T19:35:10.0294690+03:00 0HNIKAG68V5AG:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:35:10.0295580+03:00 0HNIKAG68V5AG:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:35:19.8633740+03:00 0HNIKAG68V5AG:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+OfficeOpenXml.LicenseNotSetException: Please set the license using one of the methods on the static property ExcelPackage.License. See https://epplussoftware.com/developers/licensenotsetexception for more information
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor()
+   at TraversalCoreProject.Controllers.ExcelController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Controllers/ExcelController.cs:line 13
+   at lambda_method37(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-15T19:35:20.5848350+03:00 0HNIKAG68V5AG:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+OfficeOpenXml.LicenseNotSetException: Please set the license using one of the methods on the static property ExcelPackage.License. See https://epplussoftware.com/developers/licensenotsetexception for more information
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor()
+   at TraversalCoreProject.Controllers.ExcelController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Controllers/ExcelController.cs:line 13
+   at lambda_method37(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-15T19:36:30.2103390+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-15T19:39:15.6570120+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-15T19:39:15.6632930+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-15T19:39:15.6634660+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-15T19:39:15.6634720+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-15T19:39:16.1783500+03:00 0HNIKAIFLLPQU:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-15T19:39:17.7079450+03:00 0HNIKAIFLLPQU:00000001 [INF] Executed DbCommand ("254"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2026-01-15T19:39:17.8486510+03:00 0HNIKAIFLLPQU:00000001 [INF] Executed DbCommand ("62"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-15T19:39:17.9330280+03:00 0HNIKAIFLLPQU:00000001 [INF] Executed DbCommand ("72"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-15T19:39:17.9430890+03:00 0HNIKAIFLLPQU:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:39:17.9432220+03:00 0HNIKAIFLLPQU:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:39:44.6260810+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-15T19:58:30.4892050+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-15T19:58:30.4952750+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-15T19:58:30.4954410+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-15T19:58:30.4954470+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-15T19:58:31.0449730+03:00 0HNIKAT7QVFEG:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-15T19:58:31.1385710+03:00 0HNIKAT7QVFEG:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:58:31.1386650+03:00 0HNIKAT7QVFEG:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:58:39.4482800+03:00 0HNIKAT7QVFEG:00000002 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T19:58:39.4483800+03:00 0HNIKAT7QVFEG:00000002 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T19:58:48.2486350+03:00 0HNIKAT7QVFEG:00000005 [INF] Executed DbCommand ("75"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[City], [d].[DayNight], [d].[Price], [d].[Capacity]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-15T19:59:01.4770640+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-15T20:10:49.7149300+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-15T20:10:49.7221160+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-15T20:10:49.7223170+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-15T20:10:49.7223240+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-15T20:10:50.2396790+03:00 0HNIKB4449AJC:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-15T20:10:51.4327870+03:00 0HNIKB4449AJC:00000001 [INF] Executed DbCommand ("84"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2026-01-15T20:10:51.5550020+03:00 0HNIKB4449AJC:00000001 [INF] Executed DbCommand ("44"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-15T20:10:51.6135520+03:00 0HNIKB4449AJC:00000001 [INF] Executed DbCommand ("46"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-15T20:10:51.6253890+03:00 0HNIKB4449AJC:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T20:10:51.6257160+03:00 0HNIKB4449AJC:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T20:10:55.4715160+03:00 0HNIKB4449AJC:00000002 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-15T20:10:55.4716520+03:00 0HNIKB4449AJC:00000002 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-15T20:10:56.5214590+03:00 0HNIKB4449AJC:00000003 [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2026-01-15T20:10:59.0398460+03:00 0HNIKB4449AJC:00000004 [INF] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Description], [g].[Image], [g].[InstagramUrl], [g].[Name], [g].[Status], [g].[TwitterUrl]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-15T20:11:21.4337060+03:00 0HNIKB4449AJC:00000009 [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Description], [g].[Image], [g].[InstagramUrl], [g].[Name], [g].[Status], [g].[TwitterUrl]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-15T20:11:21.5107630+03:00 0HNIKB4449AJD:00000001 [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Description], [g].[Image], [g].[InstagramUrl], [g].[Name], [g].[Status], [g].[TwitterUrl]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-15T20:11:27.4461430+03:00  [INF] Application is shutting down... (90f52c38)

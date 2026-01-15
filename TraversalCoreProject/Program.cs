@@ -3,12 +3,22 @@ using DataAccessLayer.Abstract;        // Interface'ler (IDal)
 using DataAccessLayer.EntityFramework; // Ef...Dal Sınıfları
 using BusinessLayer.Abstract;          // Servis Interface'leri (IService)
 using BusinessLayer.Concrete;
+using BusinessLayer.Container;
 using EntityLayer.Concrete; // Manager Sınıfları
 using Microsoft.EntityFrameworkCore;
+using OfficeOpenXml;
 using TraversalCoreProject.Models;
 
-var builder = WebApplication.CreateBuilder(args);
 
+var builder = WebApplication.CreateBuilder(args);
+ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+builder.Services.AddLogging(x =>
+{
+    x.ClearProviders();
+    x.SetMinimumLevel(LogLevel.Debug);
+    x.AddDebug();
+});
 // appsettings.json içinden connection stringi al
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -31,25 +41,12 @@ builder.Services.AddScoped<ISubAboutDal, EfSubAboutDal>();
 builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
 builder.Services.AddScoped<ICommentDal, EfCommentDal>();
 builder.Services.AddScoped<IAppUserDal, EfAppUserDal>();
+builder.Services.AddScoped<IReservationDal, EfReservationDal>();
 
 // -------------------------------------------------------------------------
 // 3. Business Layer (Manager) Bağımlılıkları (IService -> ...Manager)
 // -------------------------------------------------------------------------
-builder.Services.AddScoped<IAboutService, AboutManager>();
-//builder.Services.AddScoped<IAbout2Service, About2Manager>();
-//builder.Services.AddScoped<IContactService, ContactManager>();
-builder.Services.AddScoped<IDestinationService, DestinationManager>();
-builder.Services.AddScoped<IFeatureService, FeatureManager>();
-//builder.Services.AddScoped<IFeature2Service, Feature2Manager>();
-builder.Services.AddScoped<IGuideService, GuideManager>();
-//builder.Services.AddScoped<INewsletterService, NewsletterManager>();
-builder.Services.AddScoped<ISubAboutService, SubAboutManager>();
-builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
-builder.Services.AddScoped<ICommentService, CommentManager>();
-// Business katmanındaki servislerin ve managerların kaydı
-builder.Services.AddScoped<IReservationService, ReservationManager>();
-builder.Services.AddScoped<IReservationDal, EfReservationDal>();
-builder.Services.AddScoped<IAppUserService, AppUserManager>();
+builder.Services.ContainerDependencies();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -71,14 +68,19 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 var app = builder.Build();
 
+var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
+var path = Directory.GetCurrentDirectory();
+loggerFactory.AddFile($"{path}/Logs/log1.txt");
 
 
-// Configure the HTTP request pipeline.
+
+// Configure the HTTP request pipeline. 
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404", "?code={0}");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

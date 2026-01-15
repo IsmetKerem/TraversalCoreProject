@@ -19,6 +19,7 @@ public class EfReservationDal:GenericRepository<Reservation>,IReservationDal
     {
         return _context.Reservations
             .Include(x => x.Destination)
+            .Include(x => x.AppUser)
             .Where(x => x.Status == "Onay Bekliyor" && x.AppUserId == id) // 'id' parametresini kullanmayı unutmuş olabilirsin
             .AsNoTracking() // Sadece listeleme yapıyorsan hızı artırır
             .ToList();
@@ -28,6 +29,7 @@ public class EfReservationDal:GenericRepository<Reservation>,IReservationDal
     {
         return _context.Reservations
             .Include(x => x.Destination)
+            .Include(x => x.AppUser)
             .Where(x => x.Status == "Onaylandı" && x.AppUserId == id) // 'id' parametresini kullanmayı unutmuş olabilirsin
             .AsNoTracking() // Sadece listeleme yapıyorsan hızı artırır
             .ToList();
@@ -37,6 +39,7 @@ public class EfReservationDal:GenericRepository<Reservation>,IReservationDal
     {
         return _context.Reservations
             .Include(x => x.Destination)
+            .Include(x => x.AppUser)
             .Where(x => x.Status == "Geçmiş Rezervasyon" && x.AppUserId == id) // 'id' parametresini kullanmayı unutmuş olabilirsin
             .AsNoTracking() // Sadece listeleme yapıyorsan hızı artırır
             .ToList();
