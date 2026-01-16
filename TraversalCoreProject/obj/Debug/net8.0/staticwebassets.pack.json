@@ -1189,6 +1189,14 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/wwwroot/pdfreports/dosya1.pdf",
+      "PackagePath": "staticwebassets/pdfreports/dosya1.pdf"
+    },
+    {
+      "Id": "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/wwwroot/pdfreports/dosya2.pdf",
+      "PackagePath": "staticwebassets/pdfreports/dosya2.pdf"
+    },
+    {
       "Id": "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/wwwroot/simple-404-template-master/404.html",
       "PackagePath": "staticwebassets/simple-404-template-master/404.html"
     },

@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.7.3, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[12.1.1, )"
@@ -344,6 +348,10 @@
               "target": "Package",
               "version": "[11.3.1, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.14.1, )"
+            },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.3.1, )"
@@ -372,9 +380,17 @@
               "target": "Package",
               "version": "[8.0.22, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            },
             "Serilog.Extensions.Logging.File": {
               "target": "Package",
               "version": "[9.0.0-dev-02303, )"
+            },
+            "iTextSharp.LGPLv2.Core": {
+              "target": "Package",
+              "version": "[3.7.12, )"
             }
           },
           "imports": [

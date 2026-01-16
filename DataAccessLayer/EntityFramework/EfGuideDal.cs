@@ -7,7 +7,26 @@ namespace DataAccessLayer.EntityFramework;
 
 public class EfGuideDal:GenericRepository<Guide>,IGuideDal
 {
+    private readonly Context _context;
+
     public EfGuideDal(Context context) : base(context)
-    {}
-    
+    {
+        _context = context;
+    }
+
+    public void ChangeToTrueByGuide(int id)
+    {
+        var values = _context.Guides.Find(id);
+        values.Status = true;
+        _context.Update(values);
+        _context.SaveChanges();
+    }
+
+    public void ChangeToFalseByGuide(int id)
+    {
+        var values = _context.Guides.Find(id);
+        values.Status = false;
+        _context.Update(values);
+        _context.SaveChanges();
+    }
 }

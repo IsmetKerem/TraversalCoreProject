@@ -21,6 +21,8 @@ public static class Extensions
         services.AddScoped<ISubAboutService, SubAboutManager>();
         services.AddScoped<ITestimonialService, TestimonialManager>();
         services.AddScoped<ICommentService, CommentManager>();
+        services.AddScoped<IExcelService, ExcelManager>();
+        services.AddScoped<IPdfService, PdfManager>();
         
         // Business katmanındaki servislerin ve managerların kaydı
         services.AddScoped<IReservationService, ReservationManager>();

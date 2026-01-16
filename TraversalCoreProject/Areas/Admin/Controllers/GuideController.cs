@@ -31,7 +31,7 @@ public class GuideController : Controller
     {
         GuideValidator validationRules = new GuideValidator();
         ValidationResult results = validationRules.Validate(guide);
-        if (!results.IsValid)
+        if (results.IsValid)
         {
             _guideService.TAdd(guide);
             return RedirectToAction("Index");
@@ -62,10 +62,12 @@ public class GuideController : Controller
 
     public IActionResult ChangeToTrue(int id)
     {
+        _guideService.TChangeToTrueByGuide(id);
         return RedirectToAction("Index");
     }
     public IActionResult ChangeToFalse(int id)
     {
+        _guideService.TChangeToFalseByGuide(id);
         return RedirectToAction("Index");
     }
 

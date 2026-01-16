@@ -187,3 +187,13 @@
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/RBush.dll
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/SixLabors.Fonts.dll
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/System.IO.Packaging.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/BouncyCastle.Cryptography.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/iTextSharp.LGPLv2.Core.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/SkiaSharp.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/runtimes/osx/native/libSkiaSharp.dylib
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/runtimes/win-arm64/native/libSkiaSharp.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/runtimes/win-x64/native/libSkiaSharp.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/runtimes/win-x86/native/libSkiaSharp.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/MailKit.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/MimeKit.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/Newtonsoft.Json.dll
