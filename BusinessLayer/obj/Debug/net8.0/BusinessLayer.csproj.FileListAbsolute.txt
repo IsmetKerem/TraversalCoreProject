@@ -18,3 +18,5 @@
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/BusinessLayer/obj/Debug/net8.0/BusinessLayer.genruntimeconfig.cache
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/BusinessLayer/obj/Debug/net8.0/ref/BusinessLayer.dll
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/BusinessLayer/obj/Debug/net8.0/BusinessLayer.sourcelink.json
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/BusinessLayer/bin/Debug/net8.0/DTOLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/BusinessLayer/bin/Debug/net8.0/DTOLayer.pdb

@@ -4,7 +4,11 @@ using DataAccessLayer.EntityFramework; // Ef...Dal Sınıfları
 using BusinessLayer.Abstract;          // Servis Interface'leri (IService)
 using BusinessLayer.Concrete;
 using BusinessLayer.Container;
-using EntityLayer.Concrete; // Manager Sınıfları
+using BusinessLayer.ValidationRules;
+using DTOLayer.DTOs.AnnouncementDTOs;
+using EntityLayer.Concrete;
+using FluentValidation;
+using FluentValidation.AspNetCore; // Manager Sınıfları
 using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
 using TraversalCoreProject.Models;
@@ -21,6 +25,15 @@ builder.Services.AddLogging(x =>
 });
 // appsettings.json içinden connection stringi al
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.CustomerValidator();
+
+
+builder.Services.AddControllersWithViews()
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Program>());
+
+
 
 // 1. DbContext'i DI container'a ekle
 builder.Services.AddDbContext<Context>(options =>

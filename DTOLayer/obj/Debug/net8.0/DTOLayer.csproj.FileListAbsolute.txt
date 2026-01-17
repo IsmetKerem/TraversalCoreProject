@@ -1,0 +1,12 @@
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/bin/Debug/net8.0/DTOLayer.deps.json
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/bin/Debug/net8.0/DTOLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/bin/Debug/net8.0/DTOLayer.pdb
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/obj/Debug/net8.0/DTOLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/obj/Debug/net8.0/DTOLayer.AssemblyInfoInputs.cache
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/obj/Debug/net8.0/DTOLayer.AssemblyInfo.cs
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/obj/Debug/net8.0/DTOLayer.csproj.CoreCompileInputs.cache
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/obj/Debug/net8.0/DTOLayer.sourcelink.json
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/obj/Debug/net8.0/DTOLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/obj/Debug/net8.0/refint/DTOLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/obj/Debug/net8.0/DTOLayer.pdb
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/DTOLayer/obj/Debug/net8.0/ref/DTOLayer.dll

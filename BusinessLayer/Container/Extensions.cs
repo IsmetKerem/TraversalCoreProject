@@ -1,6 +1,11 @@
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
+using BusinessLayer.ValidationRules;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using DTOLayer.DTOs.AnnouncementDTOs;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BusinessLayer.Container;
@@ -27,5 +32,19 @@ public static class Extensions
         // Business katmanındaki servislerin ve managerların kaydı
         services.AddScoped<IReservationService, ReservationManager>();
         services.AddScoped<IAppUserService, AppUserManager>();
+        
+        
+        services.AddScoped<IContactUsService, ContactUsManager>();
+        services.AddScoped<IContactUsDal,EfContactUsDal>();
+        
+        services.AddScoped<IAnnouncementService,AnnouncementManager>();
+        services.AddScoped<IAnnouncementDal,EfAnnouncementDal>();
+        
+    }
+
+    public static void CustomerValidator(this IServiceCollection services)
+    {
+        services.AddTransient<IValidator<AnnouncementAddDto>, AnnouncementValidator>();
+
     }
 }

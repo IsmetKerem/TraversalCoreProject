@@ -18,12 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/Announcement/AddAnnouncement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQW5ub3VuY2VtZW50L0FkZEFubm91bmNlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/Announcement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQW5ub3VuY2VtZW50L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/Announcement/UpdateAnnouncement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQW5ub3VuY2VtZW50L1VwZGF0ZUFubm91bmNlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/City/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2l0eS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/Comment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29tbWVudC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/ContactUs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29udGFjdFVzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/Dashboard/Index.cshtml]

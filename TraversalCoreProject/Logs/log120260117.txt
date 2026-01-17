@@ -1,0 +1,298 @@
+2026-01-17T19:53:48.9388650+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T19:53:48.9465440+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T19:53:48.9467210+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T19:53:48.9467280+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T19:53:49.5450580+03:00 0HNILT3UB2AMC:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T19:53:49.5861270+03:00 0HNILT3UB2AMC:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T19:53:49.5862880+03:00 0HNILT3UB2AMC:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T19:54:33.3960980+03:00 0HNILT3UB2AMI:00000001 [INF] Executed DbCommand ("524"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2026-01-17T19:54:35.8585700+03:00 0HNILT3UB2AMI:00000001 [INF] Executed DbCommand ("2,341"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-17T19:54:36.0364860+03:00 0HNILT3UB2AMI:00000001 [INF] Executed DbCommand ("143"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-17T19:54:36.3406280+03:00 0HNILT3UB2AMI:00000002 [INF] Executed DbCommand ("255"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2026-01-17T19:54:40.7739240+03:00 0HNILT3UB2AMJ:00000003 [INF] Executed DbCommand ("378"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Description], [g].[Image], [g].[InstagramUrl], [g].[Name], [g].[Status], [g].[TwitterUrl]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-17T19:54:45.1441110+03:00 0HNILT3UB2AMN:00000004 [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ContactUsID], [c].[Body], [c].[Email], [c].[MessageDate], [c].[Name], [c].[Subject]
+FROM [ContactUses] AS [c]" (0723d8ff)
+2026-01-17T19:54:45.1560830+03:00 0HNILT3UB2AMN:00000004 [ERR] The view '"Index"' was not found. Searched locations: ["/Areas/Admin/Views/ContactUs/Index.cshtml", "/Areas/Admin/Views/Shared/Index.cshtml", "/Views/Shared/Index.cshtml", "/Pages/Shared/Index.cshtml"] (9bb2756c)
+2026-01-17T19:54:45.1573520+03:00 0HNILT3UB2AMN:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Areas/Admin/Views/ContactUs/Index.cshtml
+/Areas/Admin/Views/Shared/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-17T19:54:53.8486230+03:00 0HNILT3UB2AMI:00000009 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ContactUsID], [c].[Body], [c].[Email], [c].[MessageDate], [c].[Name], [c].[Subject]
+FROM [ContactUses] AS [c]" (0723d8ff)
+2026-01-17T19:54:53.8500290+03:00 0HNILT3UB2AMI:00000009 [ERR] The view '"Index"' was not found. Searched locations: ["/Areas/Admin/Views/ContactUs/Index.cshtml", "/Areas/Admin/Views/Shared/Index.cshtml", "/Views/Shared/Index.cshtml", "/Pages/Shared/Index.cshtml"] (9bb2756c)
+2026-01-17T19:54:53.8512130+03:00 0HNILT3UB2AMI:00000009 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Areas/Admin/Views/ContactUs/Index.cshtml
+/Areas/Admin/Views/Shared/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-17T19:55:03.8048640+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T19:55:25.0001570+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T19:55:25.0066400+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T19:55:25.0068250+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T19:55:25.0068320+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T19:55:25.2211720+03:00 0HNILT4QRKGLE:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T19:55:25.3502710+03:00 0HNILT4QRKGLE:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T19:55:25.3503810+03:00 0HNILT4QRKGLE:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T19:55:27.2409920+03:00 0HNILT4QRKGLE:00000002 [INF] Executed DbCommand ("131"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ContactUsID], [c].[Body], [c].[Email], [c].[MessageDate], [c].[Name], [c].[Subject]
+FROM [ContactUses] AS [c]" (0723d8ff)
+2026-01-17T19:55:42.9412810+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T21:08:43.9667540+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T21:08:43.9732540+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T21:08:43.9734420+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T21:08:43.9734490+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T21:08:44.5814130+03:00 0HNILUDPV13Q2:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T21:08:45.6717230+03:00 0HNILUDPV13Q2:00000001 [INF] Executed DbCommand ("67"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2026-01-17T21:08:45.8841660+03:00 0HNILUDPV13Q2:00000001 [INF] Executed DbCommand ("138"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-17T21:08:45.9378930+03:00 0HNILUDPV13Q2:00000001 [INF] Executed DbCommand ("36"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-17T21:08:45.9522860+03:00 0HNILUDPV13Q2:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T21:08:45.9524560+03:00 0HNILUDPV13Q2:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T21:08:48.8917410+03:00 0HNILUDPV13Q2:00000002 [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Description], [g].[Image], [g].[InstagramUrl], [g].[Name], [g].[Status], [g].[TwitterUrl]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-17T21:08:52.3177940+03:00 0HNILUDPV13Q2:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'BusinessLayer.Abstract.IAnnouncementService' while attempting to activate 'TraversalCoreProject.Areas.Admin.Controllers.AnnouncementController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method237(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-17T21:09:01.5840070+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T21:09:36.0259620+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T21:09:36.0326130+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T21:09:36.0327980+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T21:09:36.0328070+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T21:09:36.5826110+03:00 0HNILUE9F74OS:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T21:09:36.7229880+03:00 0HNILUE9F74OS:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T21:09:36.7231000+03:00 0HNILUE9F74OS:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T21:09:39.6490870+03:00 0HNILUE9F74OS:00000002 [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T21:09:51.6435340+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T21:53:26.7708870+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T21:53:26.7785330+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T21:53:26.7787170+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T21:53:26.7787260+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T21:53:27.0235860+03:00 0HNILV6PD4AJC:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T21:53:28.4413330+03:00 0HNILV6PD4AJC:00000001 [INF] Executed DbCommand ("147"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2026-01-17T21:53:28.6371810+03:00 0HNILV6PD4AJC:00000001 [INF] Executed DbCommand ("79"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-17T21:53:28.6849380+03:00 0HNILV6PD4AJC:00000001 [INF] Executed DbCommand ("34"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-17T21:53:28.6941960+03:00 0HNILV6PD4AJC:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T21:53:28.6943320+03:00 0HNILV6PD4AJC:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T21:53:30.7241630+03:00 0HNILV6PD4AJC:00000002 [INF] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T21:53:33.0132340+03:00 0HNILV6PD4AJC:00000003 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T21:54:45.0102320+03:00 0HNILV6PD4AJD:00000001 [INF] Executed DbCommand ("130"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T21:54:48.9978550+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T21:54:52.4412120+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T21:54:52.4499650+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T21:54:52.4502510+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T21:54:52.4502630+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T21:54:52.6534530+03:00 0HNILV7ITNGC4:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T21:54:52.7824520+03:00 0HNILV7ITNGC4:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T21:54:52.7826520+03:00 0HNILV7ITNGC4:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T21:54:56.1582530+03:00 0HNILV7ITNGC4:00000002 [INF] Executed DbCommand ("63"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T21:55:01.1666600+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T22:00:53.0012800+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T22:00:53.0076840+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T22:00:53.0078470+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T22:00:53.0078540+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T22:00:53.3349590+03:00 0HNILVAUCKPJE:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T22:00:53.4830920+03:00 0HNILVAUCKPJE:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T22:00:53.4832160+03:00 0HNILVAUCKPJE:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T22:00:56.8984620+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T22:01:00.8059760+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T22:01:00.8142160+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T22:01:00.8149100+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T22:01:00.8153190+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T22:01:00.9996060+03:00 0HNILVB0MSVL8:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T22:01:01.1776710+03:00 0HNILVB0MSVL8:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T22:01:01.1793700+03:00 0HNILVB0MSVL8:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T22:06:51.9209130+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T22:06:51.9280750+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T22:06:51.9282480+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T22:06:51.9282540+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T22:06:52.5885050+03:00 0HNILVE9F9PV6:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T22:06:52.8687420+03:00 0HNILVE9F9PV6:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T22:06:52.8688820+03:00 0HNILVE9F9PV6:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T22:06:55.6711330+03:00 0HNILVE9F9PV6:00000002 [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T22:07:08.2801390+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T22:08:06.2143020+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T22:08:06.2210420+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T22:08:06.2212380+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T22:08:06.2212450+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T22:08:06.3678960+03:00 0HNILVEVFDNKU:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T22:08:06.4828070+03:00 0HNILVEVFDNKU:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T22:08:06.4829770+03:00 0HNILVEVFDNKU:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T22:09:00.8001900+03:00 0HNILVEVFDNKU:0000000C [INF] Executed DbCommand ("86"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Announcements] ([Content], [Date], [Title])
+OUTPUT INSERTED.[AnnouncementID]
+VALUES (@p0, @p1, @p2);" (0723d8ff)
+2026-01-17T22:09:01.0128060+03:00 0HNILVEVFDNKU:0000000D [INF] Executed DbCommand ("97"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T22:10:11.5068610+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T22:12:00.1100150+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T22:12:00.1164310+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T22:12:00.1166140+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T22:12:00.1166210+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T22:12:00.8231030+03:00 0HNILVH5A2Q8K:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T22:12:00.9618310+03:00 0HNILVH5A2Q8K:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T22:12:00.9619670+03:00 0HNILVH5A2Q8K:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T22:12:08.6400930+03:00 0HNILVH5A2Q8K:00000002 [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T22:12:12.6059980+03:00 0HNILVH5A2Q8K:00000003 [INF] Executed DbCommand ("1,085"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]
+WHERE [a].[AnnouncementID] = @__p_0" (0723d8ff)
+2026-01-17T22:12:12.9897230+03:00 0HNILVH5A2Q8K:00000003 [INF] Executed DbCommand ("346"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Announcements]
+OUTPUT 1
+WHERE [AnnouncementID] = @p0;" (0723d8ff)
+2026-01-17T22:12:13.3073000+03:00 0HNILVH5A2Q8K:00000004 [INF] Executed DbCommand ("283"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T22:12:49.9051740+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-17T22:23:59.0488210+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-17T22:23:59.0552180+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-17T22:23:59.0553940+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-17T22:23:59.0554010+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-17T22:23:59.5393580+03:00 0HNILVNRH5442:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-17T22:24:02.0111370+03:00 0HNILVNRH5442:00000001 [INF] Executed DbCommand ("111"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2026-01-17T22:24:02.2012080+03:00 0HNILVNRH5442:00000001 [INF] Executed DbCommand ("120"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-17T22:24:02.3636670+03:00 0HNILVNRH5442:00000001 [INF] Executed DbCommand ("152"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-17T22:24:02.3736120+03:00 0HNILVNRH5442:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-17T22:24:02.3737480+03:00 0HNILVNRH5442:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-17T22:24:02.6146740+03:00 0HNILVNRH5442:00000002 [INF] Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T22:24:08.1757140+03:00 0HNILVNRH5442:00000003 [INF] Executed DbCommand ("51"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]
+WHERE [a].[AnnouncementID] = @__p_0" (0723d8ff)
+2026-01-17T22:24:15.9011450+03:00 0HNILVNRH5442:00000004 [INF] Executed DbCommand ("58"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Announcements] SET [Content] = @p0, [Date] = @p1, [Title] = @p2
+OUTPUT 1
+WHERE [AnnouncementID] = @p3;" (0723d8ff)
+2026-01-17T22:24:16.0285900+03:00 0HNILVNRH5442:00000005 [INF] Executed DbCommand ("116"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[AnnouncementID], [a].[Content], [a].[Date], [a].[Title]
+FROM [Announcements] AS [a]" (0723d8ff)
+2026-01-17T22:24:23.8019610+03:00  [INF] Application is shutting down... (90f52c38)

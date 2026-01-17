@@ -197,3 +197,7 @@
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/MailKit.dll
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/MimeKit.dll
 /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/DTOLayer.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/DTOLayer.pdb
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/AutoMapper.dll
+/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
