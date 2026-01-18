@@ -26,6 +26,8 @@ builder.Services.AddLogging(x =>
 // appsettings.json içinden connection stringi al
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+
+builder.Services.AddHttpClient();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.CustomerValidator();
 

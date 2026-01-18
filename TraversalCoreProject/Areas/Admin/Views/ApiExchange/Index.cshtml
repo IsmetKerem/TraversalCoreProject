@@ -1,0 +1,21 @@
+@model IEnumerable<TraversalCoreProject.Areas.Admin.Models.BookingExchangeViewModel2.Exchange_rates>
+
+@{
+    Layout="_AdminLayout";
+}
+
+<h1>Booking APİ Kur Bilgileri</h1>
+<br/>
+<table class="table table-striped">
+    <tr>
+        <th>Kur Adı</th>
+        <th>Kur Oranı</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.currency</td>
+            <td>@item.exchange_rate_buy</td>
+        </tr>
+    }
+</table>
