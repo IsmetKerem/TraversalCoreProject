@@ -11,6 +11,7 @@ using FluentValidation;
 using FluentValidation.AspNetCore; // Manager Sınıfları
 using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
+using TraversalCoreProject.CQRS.Handlers.DestinationHandlers;
 using TraversalCoreProject.Models;
 
 
@@ -57,6 +58,12 @@ builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
 builder.Services.AddScoped<ICommentDal, EfCommentDal>();
 builder.Services.AddScoped<IAppUserDal, EfAppUserDal>();
 builder.Services.AddScoped<IReservationDal, EfReservationDal>();
+builder.Services.AddScoped<GetAllDestinationQueryHandler>();
+builder.Services.AddScoped<CreateDestinationCommandHandler>();
+builder.Services.AddScoped<GetDestinationByIDQueryHandler>();
+builder.Services.AddScoped<RemoveDestinationCommandHandler>();
+builder.Services.AddScoped<UpdateDestinationCommandHandler>();
+
 
 // -------------------------------------------------------------------------
 // 3. Business Layer (Manager) Bağımlılıkları (IService -> ...Manager)
