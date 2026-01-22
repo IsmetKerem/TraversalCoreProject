@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/Announcement/AddAnnouncement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQW5ub3VuY2VtZW50L0FkZEFubm91bmNlbWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,6 +96,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/Guide/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR3VpZGUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/GuideMediatR/AddGuide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR3VpZGVNZWRpYXRSL0FkZEd1aWRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/GuideMediatR/GetGuides.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR3VpZGVNZWRpYXRSL0dldEd1aWRlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/GuideMediatR/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR3VpZGVNZWRpYXRSL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Views/Mail/Index.cshtml]
@@ -232,6 +248,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/LayoutPartial/_ScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0UGFydGlhbC9fU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/LayoutPartial/_SubscribePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0UGFydGlhbC9fU3Vic2NyaWJlUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/Login/SignIn.cshtml]

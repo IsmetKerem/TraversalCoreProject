@@ -8,7 +8,8 @@ using BusinessLayer.ValidationRules;
 using DTOLayer.DTOs.AnnouncementDTOs;
 using EntityLayer.Concrete;
 using FluentValidation;
-using FluentValidation.AspNetCore; // Manager Sınıfları
+using FluentValidation.AspNetCore;
+using MediatR; // Manager Sınıfları
 using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
 using TraversalCoreProject.CQRS.Handlers.DestinationHandlers;
@@ -63,6 +64,7 @@ builder.Services.AddScoped<CreateDestinationCommandHandler>();
 builder.Services.AddScoped<GetDestinationByIDQueryHandler>();
 builder.Services.AddScoped<RemoveDestinationCommandHandler>();
 builder.Services.AddScoped<UpdateDestinationCommandHandler>();
+builder.Services.AddMediatR(typeof(Program));
 
 
 // -------------------------------------------------------------------------

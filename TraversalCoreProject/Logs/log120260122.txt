@@ -1,0 +1,820 @@
+2026-01-22T14:42:49.0528150+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T14:42:49.0595590+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T14:42:49.0597480+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T14:42:49.0597550+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T14:42:49.7368180+03:00 0HNIPLDF9FH2M:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T14:42:49.8285770+03:00 0HNIPLDF9FH2M:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T14:42:49.8289520+03:00 0HNIPLDF9FH2M:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T14:43:02.0483750+03:00 0HNIPLDF9FH2P:00000005 [INF] Executed DbCommand ("87"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2026-01-22T14:43:02.2202230+03:00 0HNIPLDF9FH2P:00000005 [INF] Executed DbCommand ("66"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-22T14:43:02.2653870+03:00 0HNIPLDF9FH2P:00000005 [INF] Executed DbCommand ("34"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-22T14:43:02.3418000+03:00 0HNIPLDF9FH2M:00000007 [INF] Executed DbCommand ("44"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2026-01-22T14:43:03.8678910+03:00 0HNIPLDF9FH2R:00000005 [INF] Executed DbCommand ("31"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2026-01-22T14:43:03.9498000+03:00 0HNIPLDF9FH2R:00000005 [INF] Executed DbCommand ("33"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2026-01-22T14:43:04.0149850+03:00 0HNIPLDF9FH2R:00000005 [INF] Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Description], [g].[Image], [g].[InstagramUrl], [g].[Name], [g].[Status], [g].[TwitterUrl]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T14:43:09.3188900+03:00 0HNIPLDF9FH2P:0000000B [INF] Executed DbCommand ("77"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2026-01-22T14:43:11.5298770+03:00 0HNIPLDF9FH2O:0000000E [INF] Executed DbCommand ("103"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T14:43:36.7230800+03:00 0HNIPLDF9FH2R:0000000B [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID] AS [id], [d].[City] AS [city], [d].[DayNight] AS [daynight], [d].[Capacity] AS [capacity], [d].[Price] AS [price]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T14:43:40.8995470+03:00 0HNIPLDF9FH2M:00000010 [INF] Executed DbCommand ("98"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]
+WHERE [d].[DestinationID] = @__p_0" (0723d8ff)
+2026-01-22T14:43:43.0144590+03:00 0HNIPLDF9FH2P:0000000F [INF] Executed DbCommand ("58"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]
+WHERE [d].[DestinationID] = @__p_0" (0723d8ff)
+2026-01-22T14:43:43.2025600+03:00 0HNIPLDF9FH2P:0000000F [INF] Executed DbCommand ("114"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (DbType = Double)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Destinations] SET [Price] = @p0
+OUTPUT 1
+WHERE [DestinationID] = @p1;" (0723d8ff)
+2026-01-22T14:43:43.2667390+03:00 0HNIPLDF9FH2O:0000000F [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID] AS [id], [d].[City] AS [city], [d].[DayNight] AS [daynight], [d].[Capacity] AS [capacity], [d].[Price] AS [price]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T14:43:44.8663790+03:00 0HNIPLDF9FH2R:0000000C [INF] Executed DbCommand ("47"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]
+WHERE [d].[DestinationID] = @__p_0" (0723d8ff)
+2026-01-22T14:43:44.9538760+03:00 0HNIPLDF9FH2R:0000000C [INF] Executed DbCommand ("66"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Destinations]
+OUTPUT 1
+WHERE [DestinationID] = @p0;" (0723d8ff)
+2026-01-22T14:43:44.9999190+03:00 0HNIPLDF9FH2Q:0000000C [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID] AS [id], [d].[City] AS [city], [d].[DayNight] AS [daynight], [d].[Capacity] AS [capacity], [d].[Price] AS [price]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T14:43:47.4648560+03:00 0HNIPLDF9FH2P:00000010 [INF] Executed DbCommand ("34"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]
+WHERE [d].[DestinationID] = @__p_0" (0723d8ff)
+2026-01-22T14:43:47.5022540+03:00 0HNIPLDF9FH2P:00000010 [INF] Executed DbCommand ("37"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Destinations]
+OUTPUT 1
+WHERE [DestinationID] = @p0;" (0723d8ff)
+2026-01-22T14:43:47.5408390+03:00 0HNIPLDF9FH2O:00000010 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID] AS [id], [d].[City] AS [city], [d].[DayNight] AS [daynight], [d].[Capacity] AS [capacity], [d].[Price] AS [price]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T14:44:27.6853140+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T15:13:24.5203310+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T15:13:24.5270460+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T15:13:24.5272380+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T15:13:24.5272460+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T15:13:25.1360200+03:00 0HNIPLUI9Q8BS:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T15:13:26.3851570+03:00 0HNIPLUI9Q8BS:00000001 [INF] Executed DbCommand ("72"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2026-01-22T15:13:26.5054060+03:00 0HNIPLUI9Q8BS:00000001 [INF] Executed DbCommand ("52"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-22T15:13:26.5625370+03:00 0HNIPLUI9Q8BS:00000001 [INF] Executed DbCommand ("47"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-22T15:13:26.5717740+03:00 0HNIPLUI9Q8BS:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:13:26.5718970+03:00 0HNIPLUI9Q8BS:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:13:28.4213320+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T15:13:39.5685410+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T15:13:39.5758120+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T15:13:39.5760140+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T15:13:39.5760210+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T15:13:39.9208020+03:00 0HNIPLUMN5KFI:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T15:13:40.0455010+03:00 0HNIPLUMN5KFI:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:13:40.0457910+03:00 0HNIPLUMN5KFI:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:13:42.3643970+03:00 0HNIPLUMN5KFI:00000002 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:13:42.3645800+03:00 0HNIPLUMN5KFI:00000002 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:13:44.3280680+03:00 0HNIPLUMN5KFI:00000003 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:13:44.3281860+03:00 0HNIPLUMN5KFI:00000003 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:13:46.6563600+03:00 0HNIPLUMN5KFI:00000004 [INF] Executed DbCommand ("200"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2026-01-22T15:13:48.1905140+03:00 0HNIPLUMN5KFJ:00000001 [INF] Executed DbCommand ("131"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Name], [g].[Description], [g].[Image], [g].[GuideID]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:14:50.9056330+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T15:23:00.8099210+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T15:23:00.8166830+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T15:23:00.8168730+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T15:23:00.8168800+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T15:23:01.4040090+03:00 0HNIPM3U1OQPS:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T15:23:01.5677390+03:00 0HNIPM3U1OQPS:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:23:01.5679490+03:00 0HNIPM3U1OQPS:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:23:03.8561650+03:00 0HNIPM3U1OQPS:00000002 [INF] Executed DbCommand ("82"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Name], [g].[Description], [g].[Image], [g].[GuideID]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:23:12.6171770+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T15:23:20.5810790+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T15:23:20.5876860+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T15:23:20.5880610+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T15:23:20.5880710+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T15:23:20.9808210+03:00 0HNIPM43SC992:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T15:23:21.1012480+03:00 0HNIPM43SC992:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:23:21.1013880+03:00 0HNIPM43SC992:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:23:23.3348780+03:00 0HNIPM43SC992:00000002 [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Name], [g].[Description], [g].[Image], [g].[GuideID]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:23:23.9945800+03:00 0HNIPM43SC992:00000003 [INF] Executed DbCommand ("122"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [g].[GuideID], [g].[Description], [g].[Image], [g].[InstagramUrl], [g].[Name], [g].[Status], [g].[TwitterUrl]
+FROM [Guides] AS [g]
+WHERE [g].[GuideID] = @__p_0" (0723d8ff)
+2026-01-22T15:23:29.3895500+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T15:36:05.3591590+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T15:36:05.3653420+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T15:36:05.3655020+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T15:36:05.3655090+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T15:36:06.0201040+03:00 0HNIPMB7S90CK:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T15:36:06.2396530+03:00 0HNIPMB7S90CK:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:36:06.2398490+03:00 0HNIPMB7S90CK:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:36:14.3161990+03:00 0HNIPMB7S90CK:00000002 [INF] Executed DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Name], [g].[Description], [g].[Image], [g].[GuideID]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:36:32.1089530+03:00 0HNIPMB7S90CL:00000001 [INF] Executed DbCommand ("61"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Guides] ([Description], [Image], [InstagramUrl], [Name], [Status], [TwitterUrl])
+OUTPUT INSERTED.[GuideID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2026-01-22T15:36:32.1791680+03:00 0HNIPMB7S90CL:00000002 [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Name], [g].[Description], [g].[Image], [g].[GuideID]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:36:32.1865100+03:00 0HNIPMB7S90CL:00000002 [ERR] An exception occurred while iterating over the results of a query for context type '"DataAccessLayer.Concrete.Context"'."
+""System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method47(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" (f5c7ac34)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method47(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-01-22T15:36:32.1913210+03:00 0HNIPMB7S90CL:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method47(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TraversalCoreProject.CQRS.Handlers.GuideHandlers.GetAllGuideQueryHandler.Handle(GetAllGuideQuery request, CancellationToken cancellationToken) in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/CQRS/Handlers/GuideHandlers/GetAllGuideQueryHandler.cs:line 20
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at TraversalCoreProject.Areas.Admin.Controllers.GuideMediatRController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Controllers/GuideMediatRController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22T15:36:32.2945350+03:00 0HNIPMB7S90CK:00000004 [INF] Executed DbCommand ("38"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Guides] ([Description], [Image], [InstagramUrl], [Name], [Status], [TwitterUrl])
+OUTPUT INSERTED.[GuideID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2026-01-22T15:37:13.0564280+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T15:37:16.4445080+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T15:37:16.4512310+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T15:37:16.4514060+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T15:37:16.4514120+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T15:37:16.8533200+03:00 0HNIPMBSV1NDK:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T15:37:16.9962790+03:00 0HNIPMBSV1NDK:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:37:16.9964060+03:00 0HNIPMBSV1NDK:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:37:19.8468960+03:00 0HNIPMBSV1NDK:00000002 [INF] Executed DbCommand ("72"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Guides] ([Description], [Image], [InstagramUrl], [Name], [Status], [TwitterUrl])
+OUTPUT INSERTED.[GuideID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2026-01-22T15:37:20.0392330+03:00 0HNIPMBSV1NDK:00000003 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Name], [g].[Description], [g].[Image], [g].[GuideID]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:37:20.0493620+03:00 0HNIPMBSV1NDK:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"DataAccessLayer.Concrete.Context"'."
+""System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method133(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" (f5c7ac34)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method133(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-01-22T15:37:20.0559500+03:00 0HNIPMBSV1NDK:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method133(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TraversalCoreProject.CQRS.Handlers.GuideHandlers.GetAllGuideQueryHandler.Handle(GetAllGuideQuery request, CancellationToken cancellationToken) in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/CQRS/Handlers/GuideHandlers/GetAllGuideQueryHandler.cs:line 20
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at TraversalCoreProject.Areas.Admin.Controllers.GuideMediatRController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Controllers/GuideMediatRController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22T15:38:00.7127550+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T15:38:04.6785460+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T15:38:04.6852550+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T15:38:04.6854520+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T15:38:04.6854600+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T15:38:04.9669810+03:00 0HNIPMCBAFK28:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T15:38:05.1473470+03:00 0HNIPMCBAFK28:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:38:05.1476190+03:00 0HNIPMCBAFK28:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:38:08.9761970+03:00 0HNIPMCBAFK28:00000002 [INF] Executed DbCommand ("130"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Guides] ([Description], [Image], [InstagramUrl], [Name], [Status], [TwitterUrl])
+OUTPUT INSERTED.[GuideID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2026-01-22T15:38:09.2953040+03:00 0HNIPMCBAFK28:00000003 [INF] Executed DbCommand ("147"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Name], [g].[Description], [g].[Image], [g].[GuideID]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:38:09.3101530+03:00 0HNIPMCBAFK28:00000003 [ERR] An exception occurred while iterating over the results of a query for context type '"DataAccessLayer.Concrete.Context"'."
+""System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method133(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" (f5c7ac34)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method133(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-01-22T15:38:09.3186440+03:00 0HNIPMCBAFK28:00000003 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method133(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TraversalCoreProject.CQRS.Handlers.GuideHandlers.GetAllGuideQueryHandler.Handle(GetAllGuideQuery request, CancellationToken cancellationToken) in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/CQRS/Handlers/GuideHandlers/GetAllGuideQueryHandler.cs:line 20
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at TraversalCoreProject.Areas.Admin.Controllers.GuideMediatRController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Controllers/GuideMediatRController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22T15:38:24.2526300+03:00 0HNIPMCBAFK28:00000005 [INF] Executed DbCommand ("28"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Guides] ([Description], [Image], [InstagramUrl], [Name], [Status], [TwitterUrl])
+OUTPUT INSERTED.[GuideID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2026-01-22T15:38:24.2989870+03:00 0HNIPMCBAFK28:00000006 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Name], [g].[Description], [g].[Image], [g].[GuideID]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:38:24.2998780+03:00 0HNIPMCBAFK28:00000006 [ERR] An exception occurred while iterating over the results of a query for context type '"DataAccessLayer.Concrete.Context"'."
+""System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method133(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" (f5c7ac34)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method133(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-01-22T15:38:24.3020840+03:00 0HNIPMCBAFK28:00000006 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method133(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TraversalCoreProject.CQRS.Handlers.GuideHandlers.GetAllGuideQueryHandler.Handle(GetAllGuideQuery request, CancellationToken cancellationToken) in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/CQRS/Handlers/GuideHandlers/GetAllGuideQueryHandler.cs:line 20
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at TraversalCoreProject.Areas.Admin.Controllers.GuideMediatRController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Controllers/GuideMediatRController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22T15:39:41.0410070+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T15:40:33.5887850+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T15:40:33.5954470+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T15:40:33.5956180+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T15:40:33.5956250+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T15:40:34.3030430+03:00 0HNIPMDNPDDC4:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T15:40:34.4892700+03:00 0HNIPMDNPDDC4:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T15:40:34.4893840+03:00 0HNIPMDNPDDC4:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T15:40:38.8910530+03:00 0HNIPMDNPDDC4:00000003 [INF] Executed DbCommand ("75"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Guides] ([Description], [Image], [InstagramUrl], [Name], [Status], [TwitterUrl])
+OUTPUT INSERTED.[GuideID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2026-01-22T15:40:39.2151330+03:00 0HNIPMDNPDDC4:00000004 [INF] Executed DbCommand ("135"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Name], [g].[Description], [g].[Image]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:40:39.2304850+03:00 0HNIPMDNPDDC4:00000004 [ERR] An exception occurred while iterating over the results of a query for context type '"DataAccessLayer.Concrete.Context"'."
+""System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method164(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" (f5c7ac34)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method164(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-01-22T15:40:39.2388270+03:00 0HNIPMDNPDDC4:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method164(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TraversalCoreProject.CQRS.Handlers.GuideHandlers.GetAllGuideQueryHandler.Handle(GetAllGuideQuery request, CancellationToken cancellationToken) in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/CQRS/Handlers/GuideHandlers/GetAllGuideQueryHandler.cs:line 20
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at TraversalCoreProject.Areas.Admin.Controllers.GuideMediatRController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Controllers/GuideMediatRController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22T15:40:45.9165520+03:00 0HNIPMDNPDDC4:00000005 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Name], [g].[Description], [g].[Image]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T15:40:45.9174750+03:00 0HNIPMDNPDDC4:00000005 [ERR] An exception occurred while iterating over the results of a query for context type '"DataAccessLayer.Concrete.Context"'."
+""System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method164(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" (f5c7ac34)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method164(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-01-22T15:40:45.9198550+03:00 0HNIPMDNPDDC4:00000005 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_String()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetString(Int32 i)
+   at lambda_method164(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TraversalCoreProject.CQRS.Handlers.GuideHandlers.GetAllGuideQueryHandler.Handle(GetAllGuideQuery request, CancellationToken cancellationToken) in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/CQRS/Handlers/GuideHandlers/GetAllGuideQueryHandler.cs:line 20
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at TraversalCoreProject.Areas.Admin.Controllers.GuideMediatRController.Index() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Areas/Admin/Controllers/GuideMediatRController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22T15:42:57.1426640+03:00 0HNIPMDNPDDC5:00000001 [INF] Executed DbCommand ("122"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[GuideID], [g].[Name], [g].[Description], [g].[Image]
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T16:06:11.1407320+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T17:05:49.7517420+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T17:05:49.7596540+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T17:05:49.7599040+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T17:05:49.7599110+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T17:05:50.1884840+03:00 0HNIPNTCFVM5S:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T17:05:50.7009210+03:00 0HNIPNTCFVM5S:00000001 [WRN] No store type was specified for the decimal property '"Balance"' on entity type '"Account"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. (fff75eb8)
+2026-01-22T17:05:51.3077000+03:00 0HNIPNTCFVM5S:00000001 [INF] Executed DbCommand ("90"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2026-01-22T17:05:51.4176800+03:00 0HNIPNTCFVM5S:00000001 [INF] Executed DbCommand ("37"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-22T17:05:51.4760280+03:00 0HNIPNTCFVM5S:00000001 [INF] Executed DbCommand ("47"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-22T17:05:51.4874030+03:00 0HNIPNTCFVM5S:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T17:05:51.4875530+03:00 0HNIPNTCFVM5S:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T17:05:55.2596830+03:00 0HNIPNTCFVM5S:00000003 [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2026-01-22T17:06:05.8253870+03:00 0HNIPNTCFVM5S:00000006 [INF] Executed DbCommand ("32"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[AccountID], [a].[Balance], [a].[Name]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountID] = @__p_0" (0723d8ff)
+2026-01-22T17:06:05.8644040+03:00 0HNIPNTCFVM5S:00000006 [INF] Executed DbCommand ("29"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[AccountID], [a].[Balance], [a].[Name]
+FROM [Accounts] AS [a]
+WHERE [a].[AccountID] = @__p_0" (0723d8ff)
+2026-01-22T17:06:06.0018470+03:00 0HNIPNTCFVM5S:00000006 [INF] Executed DbCommand ("53"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Size = 4000), @p5='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Accounts] SET [Balance] = @p0, [Name] = @p1
+OUTPUT 1
+WHERE [AccountID] = @p2;
+UPDATE [Accounts] SET [Balance] = @p3, [Name] = @p4
+OUTPUT 1
+WHERE [AccountID] = @p5;" (0723d8ff)
+2026-01-22T17:06:21.0303300+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T17:12:46.3902500+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T17:12:46.3969000+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T17:12:46.3970840+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T17:12:46.3970920+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T17:12:47.2154730+03:00 0HNIPO18N2EN0:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T17:12:47.3543210+03:00 0HNIPO18N2EN0:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T17:12:47.3546460+03:00 0HNIPO18N2EN0:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T17:12:51.5984530+03:00 0HNIPO18N2EN0:00000002 [WRN] No store type was specified for the decimal property '"Balance"' on entity type '"Account"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. (fff75eb8)
+2026-01-22T17:12:52.4271500+03:00 0HNIPO18N2EN0:00000002 [INF] Executed DbCommand ("106"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:12:52.6125590+03:00 0HNIPO18N2EN0:00000002 [INF] Executed DbCommand ("79"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:12:52.6828610+03:00 0HNIPO18N2EN0:00000002 [INF] Executed DbCommand ("65"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T17:12:52.7529300+03:00 0HNIPO18N2EN1:00000001 [INF] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:12:52.7662660+03:00 0HNIPO18N2EN0:00000002 [INF] Executed DbCommand ("67"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SubAboutID], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2026-01-22T17:12:52.8201410+03:00 0HNIPO18N2EN1:00000001 [INF] Executed DbCommand ("66"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:12:52.8530230+03:00 0HNIPO18N2EN0:00000002 [INF] Executed DbCommand ("81"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestimonialID], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2026-01-22T17:12:52.9134610+03:00 0HNIPO18N2EN1:00000001 [INF] Executed DbCommand ("93"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T17:12:52.9585850+03:00 0HNIPO18N2EN1:00000001 [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SubAboutID], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2026-01-22T17:12:52.9899000+03:00 0HNIPO18N2EN1:00000001 [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestimonialID], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2026-01-22T17:12:53.8729520+03:00 0HNIPO18N2EN2:00000001 [INF] Executed DbCommand ("79"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:12:53.9402190+03:00 0HNIPO18N2EN2:00000001 [INF] Executed DbCommand ("66"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:12:53.9954250+03:00 0HNIPO18N2EN2:00000001 [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T17:12:54.1182290+03:00 0HNIPO18N2EN2:00000001 [INF] Executed DbCommand ("116"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SubAboutID], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2026-01-22T17:12:54.1835940+03:00 0HNIPO18N2EN2:00000001 [INF] Executed DbCommand ("63"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestimonialID], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2026-01-22T17:13:17.5741910+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T17:16:27.2321640+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T17:16:27.2384860+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T17:16:27.2386570+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T17:16:27.2386640+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T17:16:28.2346370+03:00 0HNIPO3AHK27K:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T17:16:28.3437300+03:00 0HNIPO3AHK27K:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T17:16:28.3438450+03:00 0HNIPO3AHK27K:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T17:16:30.3808940+03:00 0HNIPO3AHK27K:00000002 [WRN] No store type was specified for the decimal property '"Balance"' on entity type '"Account"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. (fff75eb8)
+2026-01-22T17:16:31.0979020+03:00 0HNIPO3AHK27K:00000002 [INF] Executed DbCommand ("74"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:16:31.2700930+03:00 0HNIPO3AHK27K:00000002 [INF] Executed DbCommand ("65"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:16:31.3522260+03:00 0HNIPO3AHK27K:00000002 [INF] Executed DbCommand ("78"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T17:16:31.4211920+03:00 0HNIPO3AHK27K:00000002 [INF] Executed DbCommand ("53"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SubAboutID], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2026-01-22T17:16:31.4701740+03:00 0HNIPO3AHK27K:00000002 [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestimonialID], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2026-01-22T17:43:47.8347140+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T17:43:53.1441450+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T17:43:53.1501710+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T17:43:53.1503210+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T17:43:53.1503280+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T17:43:53.8060500+03:00 0HNIPOIL11RI4:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T17:43:54.2678280+03:00 0HNIPOIL11RI4:00000001 [WRN] No store type was specified for the decimal property '"Balance"' on entity type '"Account"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. (fff75eb8)
+2026-01-22T17:43:54.9093850+03:00 0HNIPOIL11RI4:00000001 [INF] Executed DbCommand ("63"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2026-01-22T17:43:55.0206410+03:00 0HNIPOIL11RI4:00000001 [INF] Executed DbCommand ("32"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2026-01-22T17:43:55.0874690+03:00 0HNIPOIL11RI4:00000001 [INF] Executed DbCommand ("56"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2026-01-22T17:43:55.0974120+03:00 0HNIPOIL11RI4:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T17:43:55.0975480+03:00 0HNIPOIL11RI4:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T17:43:55.8056960+03:00 0HNIPOIL11RI4:00000002 [INF] Executed DbCommand ("78"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:43:55.9169580+03:00 0HNIPOIL11RI4:00000002 [INF] Executed DbCommand ("58"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:43:56.0740800+03:00 0HNIPOIL11RI4:00000002 [INF] Executed DbCommand ("152"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T17:43:56.0930330+03:00 0HNIPOIL11RI4:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Take[TSource](IEnumerable`1 source, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared_Components__Feature_Default.ExecuteAsync() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/Shared/Components/_Feature/Default.cshtml:line 9
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult.ExecuteAsync(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+   at AspNetCoreGeneratedDocument.Views_Default_Index.ExecuteAsync() in /Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject/Views/Default/Index.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22T17:44:02.4843480+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T17:45:58.6713310+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T17:45:58.6781830+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T17:45:58.6783620+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T17:45:58.6783700+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T17:45:58.9731850+03:00 0HNIPOJQB1M7C:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T17:45:59.1313320+03:00 0HNIPOJQB1M7C:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T17:45:59.1314760+03:00 0HNIPOJQB1M7C:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T17:46:00.5184550+03:00 0HNIPOJQB1M7C:00000002 [WRN] No store type was specified for the decimal property '"Balance"' on entity type '"Account"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. (fff75eb8)
+2026-01-22T17:46:01.0985830+03:00 0HNIPOJQB1M7C:00000002 [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:46:01.2612980+03:00 0HNIPOJQB1M7C:00000002 [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:46:01.2973040+03:00 0HNIPOJQB1M7C:00000002 [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T17:46:01.3429960+03:00 0HNIPOJQB1M7C:00000002 [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SubAboutID], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2026-01-22T17:46:01.4488410+03:00 0HNIPOJQB1M7C:00000002 [INF] Executed DbCommand ("99"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestimonialID], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2026-01-22T17:50:57.9195170+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T17:51:01.4462890+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T17:51:01.4528420+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T17:51:01.4530400+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T17:51:01.4530470+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T17:51:02.2728360+03:00 0HNIPOMKMUAAG:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T17:51:02.4359150+03:00 0HNIPOMKMUAAG:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T17:51:02.4360480+03:00 0HNIPOMKMUAAG:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T17:51:04.5448080+03:00 0HNIPOMKMUAAG:00000002 [WRN] No store type was specified for the decimal property '"Balance"' on entity type '"Account"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. (fff75eb8)
+2026-01-22T17:51:05.1084320+03:00 0HNIPOMKMUAAG:00000002 [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:51:05.2550070+03:00 0HNIPOMKMUAAG:00000002 [INF] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:51:05.3177230+03:00 0HNIPOMKMUAAG:00000002 [INF] Executed DbCommand ("58"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T17:51:05.3583800+03:00 0HNIPOMKMUAAG:00000002 [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SubAboutID], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2026-01-22T17:51:05.3970920+03:00 0HNIPOMKMUAAG:00000002 [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestimonialID], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2026-01-22T17:51:05.4144270+03:00 0HNIPOMKMUAAG:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The partial view '/Views/LayoutPartial/_SubscribePartial.cshtml' was not found. The following locations were searched:
+/Views/LayoutPartial/_SubscribePartial.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
+   at AspNetCoreGeneratedDocument.Views_LayoutPartial__FooterPartial.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.RenderPartialCoreAsync(String partialViewName, Object model, ViewDataDictionary viewData, TextWriter writer)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.PartialAsync(String partialViewName, Object model, ViewDataDictionary viewData)
+   at AspNetCoreGeneratedDocument.Views_Shared__UILayout.<ExecuteAsync>b__7_0()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__UILayout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-22T17:52:50.5371970+03:00  [INF] Application is shutting down... (90f52c38)
+2026-01-22T17:52:53.5321700+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-22T17:52:53.5384880+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-22T17:52:53.5386460+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-22T17:52:53.5386530+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-22T17:52:53.8330530+03:00 0HNIPONLVONOE:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-22T17:52:53.9279790+03:00 0HNIPONLVONOE:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-22T17:52:53.9281270+03:00 0HNIPONLVONOE:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-22T17:52:56.2773990+03:00 0HNIPONLVONOE:00000002 [WRN] No store type was specified for the decimal property '"Balance"' on entity type '"Account"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. (fff75eb8)
+2026-01-22T17:52:56.9447690+03:00 0HNIPONLVONOE:00000002 [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:52:57.0923400+03:00 0HNIPONLVONOE:00000002 [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-22T17:52:57.1380170+03:00 0HNIPONLVONOE:00000002 [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-22T17:52:57.2149440+03:00 0HNIPONLVONOE:00000002 [INF] Executed DbCommand ("65"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SubAboutID], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2026-01-22T17:52:57.2780640+03:00 0HNIPONLVONOE:00000002 [INF] Executed DbCommand ("56"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestimonialID], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2026-01-22T17:55:21.7599570+03:00  [INF] Application is shutting down... (90f52c38)
