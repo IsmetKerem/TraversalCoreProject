@@ -48,6 +48,7 @@ public static class Extensions
         
         
         services.AddScoped<IUowDal,UowDal>();
+       
         
 
     }

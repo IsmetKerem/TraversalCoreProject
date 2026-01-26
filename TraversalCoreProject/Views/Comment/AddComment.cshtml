@@ -4,6 +4,7 @@
     <p class="mb-4">İşaretli alanalrı doldurmanız gerekmektedir.
     </p>
     <form method="post" asp-action="AddComment" asp-controller="Comment">
+        <input type="hidden" name="DestinationID" value="@ViewBag.destID" />
 
         <div class="form-group">
             <textarea name="CommentContent" class="form-control" placeholder="Yorumunuz*" required=""
@@ -11,13 +12,6 @@
         </div>
         <div class="input-grids row">
 
-            <div class="form-group col-lg-6">
-                <input type="text" name="CommentUser" class="form-control" placeholder="Adınız-Soyadınız*"
-                       required="">
-            </div>
-            <div class="form-group col-lg-6">
-                <input type="hidden" name="DestinationID"  class="form-control" placeholder="DestinationID*" required="" value="@Model.DestinationID">
-            </div>
         </div>
 
         <div class="submit text-right">

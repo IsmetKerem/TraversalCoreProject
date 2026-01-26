@@ -43,6 +43,11 @@ public class CommentManager:ICommentService
         return _commentDal.GetListCommentWithDestination();
     }
 
+    public List<Comment> TGetListCommentWithDestinationAndUser(int id)
+    {
+        return _commentDal.GetListCommentWithDestinationAndUser(id);
+    }
+
     public Comment TGetByID(int id)
     {
         return _commentDal.GetById(id);

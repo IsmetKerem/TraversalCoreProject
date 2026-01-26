@@ -1,0 +1,29 @@
+2026-01-26T11:39:00.0738550+03:00  [INF] Now listening on: "http://localhost:5092" (d826f4b8)
+2026-01-26T11:39:00.0805410+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2026-01-26T11:39:00.0807290+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2026-01-26T11:39:00.0807360+03:00  [INF] Content root path: "/Users/ismetkerem/RiderProjects/TraversalCoreProject/TraversalCoreProject" (cc26f24e)
+2026-01-26T11:39:00.8668770+03:00 0HNISMPD83G1U:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2026-01-26T11:39:00.9157250+03:00 0HNISMPD83G1U:00000001 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-26T11:39:00.9158800+03:00 0HNISMPD83G1U:00000001 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-26T11:39:06.0755290+03:00 0HNISMPD83G1V:00000002 [INF] Index Sayfası Çağrıldı.  (84f8a907)
+2026-01-26T11:39:06.0756680+03:00 0HNISMPD83G1V:00000002 [ERR] Error Log Çağırıldı (bba70900)
+2026-01-26T11:39:07.2367880+03:00 0HNISMPD83G1U:00000003 [WRN] No store type was specified for the decimal property '"Balance"' on entity type '"Account"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. (fff75eb8)
+2026-01-26T11:39:08.4527200+03:00 0HNISMPD83G1U:00000003 [INF] Executed DbCommand ("171"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-26T11:39:08.5944700+03:00 0HNISMPD83G1U:00000003 [INF] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-26T11:39:08.6319520+03:00 0HNISMPD83G1U:00000003 [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2026-01-26T11:39:08.6808380+03:00 0HNISMPD83G1U:00000003 [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[SubAboutID], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2026-01-26T11:39:08.7342000+03:00 0HNISMPD83G1U:00000003 [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[TestimonialID], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2026-01-26T11:39:13.5519970+03:00 0HNISMPD83G23:00000008 [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[DestinationID], [d].[Capacity], [d].[City], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Details1], [d].[Details2], [d].[Image], [d].[Image2], [d].[Price], [d].[Status]
+FROM [Destinations] AS [d]" (0723d8ff)
+2026-01-26T11:39:24.3001630+03:00  [INF] Application is shutting down... (90f52c38)
