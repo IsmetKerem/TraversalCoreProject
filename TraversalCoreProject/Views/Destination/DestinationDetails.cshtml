@@ -61,7 +61,10 @@
 				</div>
 				<div class="single-post-content">
 					<p class="alphabet mb-4">
-						<span class="big-letter">@Model.Details1.Substring(0, 1)</span>@Model.Details1
+						@if (!string.IsNullOrEmpty(Model.Details1))
+						{
+							<span class="big-letter">@Model.Details1.Substring(0, 1)</span>@Model.Details1.Substring(1)
+						}
 					</p>
 
 					<blockquote class="blockquote my-5">
@@ -118,7 +121,7 @@
 							<div class="col-sm-9 mt-sm-0 mt-3">
 								<h3 class="mb-3 title">@Model.Guide.Name</h3>
 								<p>
-									@Model.Guide.Description2
+									@Model.Guide.Description
 								</p>
 								<ul class="author-icons mt-4">
 									<li>

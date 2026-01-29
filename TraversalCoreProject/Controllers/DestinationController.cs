@@ -13,32 +13,30 @@ public class DestinationController : Controller
 {
     private readonly IDestinationService _destinationService;
     private readonly UserManager<AppUser> _userManager;
-    
+
 
     public DestinationController(IDestinationService destinationService, UserManager<AppUser> userManager)
     {
         _destinationService = destinationService;
         _userManager = userManager;
     }
+
     // GET
     public IActionResult Index()
     {
         var values = _destinationService.TGetList();
         return View(values);
     }
+
     [HttpGet]
 
-    public IActionResult DestinationDetails(int id)
+    public async Task<IActionResult> DestinationDetails(int id)
     {
         ViewBag.id = id;
         ViewBag.destID = id;
-        var values = _destinationService.TGetByID(id);
+        var value = await _userManager.FindByNameAsync(User.Identity.Name);
+        ViewBag.userID = value.Id;
+        var values = _destinationService.TGetDestinationWithGuide(id);
         return View(values);
-    }
-    [HttpPost]
-
-    public IActionResult DestinationDetails(Destination p)
-    {
-        return View();
     }
 }

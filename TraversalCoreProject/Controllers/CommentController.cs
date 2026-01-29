@@ -21,21 +21,20 @@ public class CommentController : Controller
     }
     // GET
     [HttpGet]
-    public async Task<PartialViewResult> AddComment(int id)
+    public PartialViewResult AddComment()
     {
-        ViewBag.destID = id;
-        var value = await _userManager.FindByNameAsync(User.Identity.Name);
-        ViewBag.userID = 
+        //ViewBag.destId = id;
+
+        //var value = await _userManager.FindByNameAsync(User.Identity.Name);
+        //ViewBag.userId = value.Id;
         return PartialView();
     }
-
     [HttpPost]
-    public IActionResult AddComment(Comment p)
+    public IActionResult AddComment(Comment comment)
     {
-        p.CommentDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
-        p.CommentState = true;
-        _commentService.TAdd(p);
+        comment.CommentDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+        comment.CommentState = true;
+        _commentService.TAdd(comment);
         return RedirectToAction("Index", "Destination");
     }
-
 }
