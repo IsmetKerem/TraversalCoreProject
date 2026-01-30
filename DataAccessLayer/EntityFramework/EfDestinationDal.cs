@@ -19,4 +19,10 @@ public class EfDestinationDal:GenericRepository<Destination>,IDestinationDal
     {
         return _context.Destinations.Where(x=>x.DestinationID==id).Include(x => x.Guide).FirstOrDefault();
     }
+
+    public List<Destination> GetLast4Destinations()
+    {
+        var values = _context.Destinations.Take(4).OrderByDescending(x=>x.DestinationID).ToList();
+        return values;
+    }
 }

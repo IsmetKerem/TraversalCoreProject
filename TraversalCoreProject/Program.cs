@@ -32,7 +32,10 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddHttpClient();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.CustomerValidator();
-
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Login/SignIn/";
+});
 
 builder.Services.AddControllersWithViews()
     .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Program>());
