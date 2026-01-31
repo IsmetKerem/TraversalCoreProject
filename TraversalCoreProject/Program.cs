@@ -86,6 +86,7 @@ builder.Services.AddScoped<GetAllDestinationQueryHandler>();
 builder.Services.AddScoped<CreateDestinationCommandHandler>();
 builder.Services.AddScoped<GetDestinationByIDQueryHandler>();
 builder.Services.AddScoped<RemoveDestinationCommandHandler>();
+builder.Services.AddHttpClient<IAIService, GeminiAIManager>();
 builder.Services.AddScoped<UpdateDestinationCommandHandler>();
 builder.Services.AddMediatR(typeof(Program));
 
