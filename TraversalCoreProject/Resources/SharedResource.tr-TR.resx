@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <data name="Dashboard" xml:space="preserve"><value>Kontrol Paneli</value></data>
+  <data name="MyProfile" xml:space="preserve"><value>Profilim</value></data>
+  <data name="ActiveReservations" xml:space="preserve"><value>Aktif Rezervasyonlar</value></data>
+  <data name="PastReservations" xml:space="preserve"><value>Geçmiş Rezervasyonlar</value></data>
+  <data name="PendingApproval" xml:space="preserve"><value>Onay Bekleyen Rezervasyonlar</value></data>
+  <data name="NewReservation" xml:space="preserve"><value>Yeni Rezervasyon</value></data>
+  <data name="MyComments" xml:space="preserve"><value>Yorumlarım</value></data>
+  <data name="TourRoutes" xml:space="preserve"><value>Tur Rotaları</value></data>
+  <data name="GoToSite" xml:space="preserve"><value>Siteye Git</value></data>
+  <data name="Logout" xml:space="preserve"><value>Çıkış Yap</value></data>
+  <data name="City" xml:space="preserve"><value>Şehir</value></data>
+  <data name="Duration" xml:space="preserve"><value>Süre</value></data>
+  <data name="Capacity" xml:space="preserve"><value>Kapasite</value></data>
+  <data name="Price" xml:space="preserve"><value>Fiyat</value></data>
+  <data name="Details" xml:space="preserve"><value>Detaylar</value></data>
+  <data name="Search" xml:space="preserve"><value>Ara</value></data>
+  <data name="SearchCity" xml:space="preserve"><value>Şehir Ara</value></data>
+  <data name="Delete" xml:space="preserve"><value>Sil</value></data>
+  <data name="Update" xml:space="preserve"><value>Güncelle</value></data>
+  <data name="GoToRoute" xml:space="preserve"><value>Rotaya Git</value></data>
+  <data name="YourComments" xml:space="preserve"><value>Tur Rotalarına Yaptığınız Yorumlar</value></data>
+  <data name="ActiveTourRoutes" xml:space="preserve"><value>Aktif Tur Rotaları</value></data>
+  <data name="TourRouteSearch" xml:space="preserve"><value>Tur Rotası Arama Sayfası</value></data>
+  <data name="ProfileEdit" xml:space="preserve"><value>Profil Düzenleme</value></data>
+  <data name="YourName" xml:space="preserve"><value>Adınız</value></data>
+  <data name="YourSurname" xml:space="preserve"><value>Soyadınız</value></data>
+  <data name="YourEmail" xml:space="preserve"><value>Mail Adresiniz</value></data>
+  <data name="Password" xml:space="preserve"><value>Şifreniz</value></data>
+  <data name="ConfirmPassword" xml:space="preserve"><value>Şifre Tekrar</value></data>
+  <data name="PhoneNumber" xml:space="preserve"><value>Telefon Numarası</value></data>
+  <data name="SelectPhoto" xml:space="preserve"><value>Fotoğraf Seçin</value></data>
+  <data name="Save" xml:space="preserve"><value>Kaydet</value></data>
+  <data name="Cancel" xml:space="preserve"><value>İptal</value></data>
+  <data name="NewGuestParticipation" xml:space="preserve"><value>Yeni Misafir Katılımı</value></data>
+  <data name="ActiveTourDensity" xml:space="preserve"><value>Aktif Tur Yoğunluğu</value></data>
+  <data name="TourSales" xml:space="preserve"><value>Tur Satışları</value></data>
+  <data name="LastRoutes" xml:space="preserve"><value>Son Rotalar</value></data>
+  <data name="LatestTravelRoutes" xml:space="preserve"><value>En Son Eklenen Seyahat Rotaları</value></data>
+  <data name="TourDetails" xml:space="preserve"><value>Tur Detayları</value></data>
+  <data name="YourComment" xml:space="preserve"><value>Yorumunuz</value></data>
+  <data name="ProfileInfo" xml:space="preserve"><value>Profil bilgilerinizi güncelleyebilirsiniz</value></data>
+  <data name="UserPanel" xml:space="preserve"><value>Kullanıcı Paneli</value></data>
+</root>

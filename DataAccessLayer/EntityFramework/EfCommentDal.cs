@@ -25,4 +25,20 @@ public class EfCommentDal:GenericRepository<Comment>,ICommentDal
     {
         return _context.Comments.Where(x=>x.DestinationID==id).Include(x => x.AppUser).ToList();
     }
+
+    public List<Comment> GetListCommentWithUser(int userId)
+    {
+        return _context.Comments.Where(x => x.AppUserID == userId)  
+            .Include(x => x.Destination)       
+            .Include(x => x.AppUser)           
+            .ToList();
+    }
+
+    public Comment GetComment(int id)
+    {
+        return _context.Comments
+            .Include(c => c.AppUser)       
+            .Include(c => c.Destination)  
+            .FirstOrDefault(c => c.CommentID == id);
+    }
 }

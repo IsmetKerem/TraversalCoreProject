@@ -1,27 +1,77 @@
 @using EntityLayer.Concrete
 @model List<Destination>
 @{
-    Layout = "_UserLayout";
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
+    int count = 0;
 }
-<h1>Akitf tur rotaları</h1>
-<table class="table table-bordered">
-    <tr>
-        <th>#</th>
-        <th>Şehir</th>
-        <th>Süre</th>
-        <th>Kapasite</th>
-        <th>Fiyat</th>
-        <th>Detaylar</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.DestinationID</td>
-            <td>@item.City</td>
-            <td>@item.DayNight</td>
-            <td>@item.Capacity</td>
-            <td>@item.Price</td>
-            <td><a href="#" class="btn btn-outline-info">Detaylar</a></td>
-        </tr>
-    }
-</table>
+
+<div class="row">
+    <div class="col-12">
+       <div class="card mb-4">
+          <div class="card-header">
+             <h4 class="card-title">@SharedLocalizer["ActiveTourRoutes"]</h4>
+             <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+             <div class="heading-elements">
+                <ul class="list-inline mb-0">
+                   <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                   <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                   <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                   <li><a data-action="close"><i class="ft-x"></i></a></li>
+                </ul>
+             </div>
+          </div>
+
+          <div class="card-content collapse show">
+             <div class="card-body px-0 pt-0 pb-2">
+                <div class="table-responsive p-0">
+                   <table class="table align-items-center mb-0">
+                      <thead>
+                         <tr>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">@SharedLocalizer["City"]</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">@SharedLocalizer["Duration"]</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">@SharedLocalizer["Capacity"]</th>
+                            <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">@SharedLocalizer["Price"]</th>
+                            <th class="text-secondary opacity-7"></th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         @foreach (var item in Model)
+                         {
+                            count++;
+                            <tr>
+                               <td class="align-middle text-center text-sm">
+                                  <p class="text-xs text-secondary mb-0">@count</p>
+                               </td>
+                               <td class="align-middle text-center text-sm">
+                                  <img src="@item.Image" class="avatar avatar-md mb-0" style="width:100px;height:60px" alt="user1">
+                               </td>
+                               <td class="align-middle text-center text-sm">
+                                  <p class="text-xs font-weight-bold mb-0">@item.City</p>
+                               </td>
+                               <td class="align-middle text-center text-sm">
+                                  <p class="text-xs font-weight-bold mb-0">@item.DayNight</p>
+                               </td>
+                               <td class="align-middle text-center text-sm">
+                                  <p class="text-xs text-secondary mb-0">@item.Capacity</p>
+                               </td>
+                               <td class="align-middle text-center">
+                                  <span class="text-secondary text-xs font-weight-bold">@item.Price ₺</span>
+                               </td>
+                               <td class="align-middle">
+                                  <a href="/Destination/DestinationDetails/@item.DestinationID" class="btn btn-primary xs">
+                                     @SharedLocalizer["Details"]
+                                  </a>
+                               </td>
+                            </tr>
+                         }
+                      </tbody>
+                   </table>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+</div>

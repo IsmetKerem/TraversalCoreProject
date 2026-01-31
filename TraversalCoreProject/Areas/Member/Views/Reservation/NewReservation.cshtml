@@ -1,25 +1,107 @@
 @model EntityLayer.Concrete.Reservation
 @{
-    Layout="_UserLayout";
+    ViewData["Title"] = "NewReservation";
+    Layout = "~/Views/Shared/_MemberLayout.cshtml";
 }
-<h1>Yeni Rezervasyon Sayfası</h1>
-<form method="post">
-   @* <div class="form-group">
-        @Html.Label("Lokasyon")
-        @Html.DropDownListFor(x => x.Destination,(List<SelectListItem>)ViewBag.v , new {@class = "form-control"})
-    </div>*@
-    <div class="form-group">
-        @Html.Label("Kişi Sayısı")
-        <input type="text" asp-for="PersonCount" class="form-control"></input>
-    </div>
-    <div class="form-group">
-        @Html.Label("Tarih")
-        <input type="date" asp-for="ReservationDate" class="form-control"></input>
-    </div>
-    <div class="form-group">
-        @Html.Label("Varsa Eklemek istedikleriniz")
-        <input type="text" asp-for="Description" class="form-control"></input>
-    </div>
-    <button class="btn btn-outline-success">Rezervasyon Yap</button>
-</form>
 
+<div class="row">
+    <div class="col-12">
+       <div class="card">
+          <div class="card-header">
+             <h4 class="card-title">@SharedLocalizer["NewReservation"]</h4>
+             <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+             <div class="heading-elements">
+                <ul class="list-inline mb-0">
+                   <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                   <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                   <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                   <li><a data-action="close"><i class="ft-x"></i></a></li>
+                </ul>
+             </div>
+          </div>
+
+          <div class="card-content collapse show">
+             <div class="card-body">
+                <form method="post">
+                   <div class="form-group">
+                      <label>@SharedLocalizer["Location"]</label>
+                      @Html.DropDownListFor(x => x.DestinationID, (List<SelectListItem>)ViewBag.v, new { @class = "form-control", id = "destination" })
+                   </div>
+                   <div class="form-group">
+                      <label>@SharedLocalizer["PersonCount"]</label>
+                      <input type="text" asp-for="PersonCount" class="form-control" id="personcount" />
+                   </div>
+                   <div class="form-group">
+                      <label>@SharedLocalizer["ReservationDate"]</label>
+                      <input type="date" asp-for="ReservationDate" class="form-control" id="restime" />
+                   </div>
+                   <div class="form-group">
+                      <label>@SharedLocalizer["Note"]</label>
+                      <input type="text" asp-for="Description" class="form-control" id="description" />
+                   </div>
+                   <button type="submit" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#informationModal">@SharedLocalizer["MakeReservation"]</button>
+                </form>
+             </div>
+          </div>
+       </div>
+    </div>
+</div>
+
+<div class="modal fade" id="informationModal" tabindex="-1" aria-labelledby="informationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h3 class="modal-title" id="informationModalLabel">@SharedLocalizer["Warning"]</h3>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+             <p>@SharedLocalizer["ReservationWarningMessage"]</p>
+          </div>
+          <div class="modal-footer">
+             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">@SharedLocalizer["Cancel"]</button>
+             <button onclick="postValues()" data-bs-toggle="modal" data-bs-target="#successModal" data-bs-dismiss="modal" class="btn btn-primary">@SharedLocalizer["IAccept"]</button>
+          </div>
+       </div>
+    </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h3 class="modal-title" id="successModalLabel">@SharedLocalizer["Success"]</h3>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+             <p>@SharedLocalizer["ReservationSuccessMessage"]</p>
+          </div>
+          <div class="modal-footer">
+             <button type="button" class="btn btn-success" data-bs-dismiss="modal">@SharedLocalizer["Excellent"]</button>
+          </div>
+       </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function postValues() {
+       let values = {
+          DestinationId: $("#destination").val(),
+          PersonCount: $("#personcount").val(),
+          ReservationDate: $("#restime").val(),
+          Description: $("#description").val()
+       };
+
+       $.ajax({
+          type: "POST",
+          url: "/Member/Reservation/NewReservation/",
+          data: values,
+          success: function (response) {
+             $('#informationModal').modal('hide'); 
+             $('#successModal').modal('show'); 
+          },
+          error: function (xhr, status, error) {
+             alert("Error: " + error);
+          }
+       });
+    }
+</script>

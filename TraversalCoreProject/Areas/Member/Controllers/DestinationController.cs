@@ -19,4 +19,16 @@ public class DestinationController : Controller
         var values = _destinationService.TGetList();
         return View(values);
     }
+    public IActionResult GetCitiesSearchByName(string searchString)
+    {
+        ViewData["PageTitle"] = "Tur Rotaları";
+
+        ViewData["CurrentFilter"] = searchString;
+        var values = from x in _destinationService.TGetList() select x;
+        if (!string.IsNullOrEmpty(searchString))
+        {
+            values =values.Where(x=>x.City.Contains(searchString));
+        }
+        return View(values.ToList());
+    }
 }

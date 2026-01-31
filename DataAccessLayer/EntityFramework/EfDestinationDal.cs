@@ -22,7 +22,10 @@ public class EfDestinationDal:GenericRepository<Destination>,IDestinationDal
 
     public List<Destination> GetLast4Destinations()
     {
-        var values = _context.Destinations.Take(4).OrderByDescending(x=>x.DestinationID).ToList();
-        return values;
+        return _context.Destinations
+            .Include(x => x.Guide)  
+            .OrderByDescending(x => x.DestinationID)
+            .Take(4)
+            .ToList();
     }
 }

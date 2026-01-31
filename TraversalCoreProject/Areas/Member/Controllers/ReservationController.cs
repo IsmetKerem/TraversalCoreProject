@@ -60,4 +60,9 @@ public class ReservationController : Controller
         _reservationService.TAdd(p);
         return RedirectToAction("MyCurrentReservation");
     }
+
+    public IActionResult Deneme()
+    {
+        return View();
+    }
 }

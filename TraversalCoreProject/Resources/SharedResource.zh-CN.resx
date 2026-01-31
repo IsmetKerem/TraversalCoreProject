@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <data name="Dashboard" xml:space="preserve"><value>仪表板</value></data>
+  <data name="MyProfile" xml:space="preserve"><value>我的资料</value></data>
+  <data name="ActiveReservations" xml:space="preserve"><value>当前预订</value></data>
+  <data name="PastReservations" xml:space="preserve"><value>历史预订</value></data>
+  <data name="PendingApproval" xml:space="preserve"><value>待批准</value></data>
+  <data name="NewReservation" xml:space="preserve"><value>新预订</value></data>
+  <data name="MyComments" xml:space="preserve"><value>我的评论</value></data>
+  <data name="TourRoutes" xml:space="preserve"><value>旅游路线</value></data>
+  <data name="GoToSite" xml:space="preserve"><value>返回网站</value></data>
+  <data name="Logout" xml:space="preserve"><value>退出</value></data>
+  <data name="City" xml:space="preserve"><value>城市</value></data>
+  <data name="Duration" xml:space="preserve"><value>时长</value></data>
+  <data name="Capacity" xml:space="preserve"><value>容量</value></data>
+  <data name="Price" xml:space="preserve"><value>价格</value></data>
+  <data name="Details" xml:space="preserve"><value>详情</value></data>
+  <data name="Search" xml:space="preserve"><value>搜索</value></data>
+  <data name="SearchCity" xml:space="preserve"><value>搜索城市</value></data>
+  <data name="Delete" xml:space="preserve"><value>删除</value></data>
+  <data name="Update" xml:space="preserve"><value>更新</value></data>
+  <data name="GoToRoute" xml:space="preserve"><value>前往路线</value></data>
+  <data name="YourComments" xml:space="preserve"><value>您对旅游路线的评论</value></data>
+  <data name="ActiveTourRoutes" xml:space="preserve"><value>活跃旅游路线</value></data>
+  <data name="TourRouteSearch" xml:space="preserve"><value>旅游路线搜索</value></data>
+  <data name="ProfileEdit" xml:space="preserve"><value>编辑资料</value></data>
+  <data name="YourName" xml:space="preserve"><value>您的姓名</value></data>
+  <data name="YourSurname" xml:space="preserve"><value>您的姓氏</value></data>
+  <data name="YourEmail" xml:space="preserve"><value>您的邮箱</value></data>
+  <data name="Password" xml:space="preserve"><value>密码</value></data>
+  <data name="ConfirmPassword" xml:space="preserve"><value>确认密码</value></data>
+  <data name="PhoneNumber" xml:space="preserve"><value>电话号码</value></data>
+  <data name="SelectPhoto" xml:space="preserve"><value>选择照片</value></data>
+  <data name="Save" xml:space="preserve"><value>保存</value></data>
+  <data name="Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="NewGuestParticipation" xml:space="preserve"><value>新客人参与</value></data>
+  <data name="ActiveTourDensity" xml:space="preserve"><value>活跃旅游密度</value></data>
+  <data name="TourSales" xml:space="preserve"><value>旅游销售</value></data>
+  <data name="LastRoutes" xml:space="preserve"><value>最新路线</value></data>
+  <data name="LatestTravelRoutes" xml:space="preserve"><value>最新旅游路线</value></data>
+  <data name="TourDetails" xml:space="preserve"><value>旅游详情</value></data>
+  <data name="YourComment" xml:space="preserve"><value>您的评论</value></data>
+  <data name="ProfileInfo" xml:space="preserve"><value>您可以更新您的资料信息</value></data>
+  <data name="UserPanel" xml:space="preserve"><value>用户面板</value></data>
+</root>

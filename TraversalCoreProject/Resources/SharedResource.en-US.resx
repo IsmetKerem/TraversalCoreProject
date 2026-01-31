@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <data name="Dashboard" xml:space="preserve"><value>Dashboard</value></data>
+  <data name="MyProfile" xml:space="preserve"><value>My Profile</value></data>
+  <data name="ActiveReservations" xml:space="preserve"><value>Active Reservations</value></data>
+  <data name="PastReservations" xml:space="preserve"><value>Past Reservations</value></data>
+  <data name="PendingApproval" xml:space="preserve"><value>Pending Approval</value></data>
+  <data name="NewReservation" xml:space="preserve"><value>New Reservation</value></data>
+  <data name="MyComments" xml:space="preserve"><value>My Comments</value></data>
+  <data name="TourRoutes" xml:space="preserve"><value>Tour Routes</value></data>
+  <data name="GoToSite" xml:space="preserve"><value>Go to Site</value></data>
+  <data name="Logout" xml:space="preserve"><value>Logout</value></data>
+  <data name="City" xml:space="preserve"><value>City</value></data>
+  <data name="Duration" xml:space="preserve"><value>Duration</value></data>
+  <data name="Capacity" xml:space="preserve"><value>Capacity</value></data>
+  <data name="Price" xml:space="preserve"><value>Price</value></data>
+  <data name="Details" xml:space="preserve"><value>Details</value></data>
+  <data name="Search" xml:space="preserve"><value>Search</value></data>
+  <data name="SearchCity" xml:space="preserve"><value>Search City</value></data>
+  <data name="Delete" xml:space="preserve"><value>Delete</value></data>
+  <data name="Update" xml:space="preserve"><value>Update</value></data>
+  <data name="GoToRoute" xml:space="preserve"><value>Go to Route</value></data>
+  <data name="YourComments" xml:space="preserve"><value>Your Comments on Tour Routes</value></data>
+  <data name="ActiveTourRoutes" xml:space="preserve"><value>Active Tour Routes</value></data>
+  <data name="TourRouteSearch" xml:space="preserve"><value>Tour Route Search Page</value></data>
+  <data name="ProfileEdit" xml:space="preserve"><value>Edit Profile</value></data>
+  <data name="YourName" xml:space="preserve"><value>Your Name</value></data>
+  <data name="YourSurname" xml:space="preserve"><value>Your Surname</value></data>
+  <data name="YourEmail" xml:space="preserve"><value>Your Email</value></data>
+  <data name="Password" xml:space="preserve"><value>Password</value></data>
+  <data name="ConfirmPassword" xml:space="preserve"><value>Confirm Password</value></data>
+  <data name="PhoneNumber" xml:space="preserve"><value>Phone Number</value></data>
+  <data name="SelectPhoto" xml:space="preserve"><value>Select Photo</value></data>
+  <data name="Save" xml:space="preserve"><value>Save</value></data>
+  <data name="Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="NewGuestParticipation" xml:space="preserve"><value>New Guest Participation</value></data>
+  <data name="ActiveTourDensity" xml:space="preserve"><value>Active Tour Density</value></data>
+  <data name="TourSales" xml:space="preserve"><value>Tour Sales</value></data>
+  <data name="LastRoutes" xml:space="preserve"><value>Latest Routes</value></data>
+  <data name="LatestTravelRoutes" xml:space="preserve"><value>Latest Travel Routes</value></data>
+  <data name="TourDetails" xml:space="preserve"><value>Tour Details</value></data>
+  <data name="YourComment" xml:space="preserve"><value>Your Comment</value></data>
+  <data name="ProfileInfo" xml:space="preserve"><value>You can update your profile information</value></data>
+  <data name="UserPanel" xml:space="preserve"><value>User Panel</value></data>
+</root>

@@ -1,0 +1,58 @@
+@using System.Globalization
+@{
+    var currentCulture = ViewBag.CurrentCulture as string ?? "tr-TR";
+    var supportedCultures = ViewBag.SupportedCultures as IEnumerable<CultureInfo>;
+    var returnUrl = ViewBag.ReturnUrl as string ?? "/";
+
+    // Dictionary yerine basit bir yöntem kullanalım
+    string GetFlag(string culture)
+    {
+        return culture switch
+        {
+            "tr-TR" => "flag-icon-tr",
+            "en-US" => "flag-icon-us",
+            "zh-CN" => "flag-icon-cn",
+            "ru-RU" => "flag-icon-ru",
+            "fr-FR" => "flag-icon-fr",
+            "es-ES" => "flag-icon-es",
+            _ => "flag-icon-tr"
+        };
+    }
+
+    string GetName(string culture)
+    {
+        return culture switch
+        {
+            "tr-TR" => "Türkçe",
+            "en-US" => "English",
+            "zh-CN" => "中文",
+            "ru-RU" => "Русский",
+            "fr-FR" => "Français",
+            "es-ES" => "Español",
+            _ => "Türkçe"
+        };
+    }
+}
+
+<ul class="nav navbar-nav float-right">
+    <li class="dropdown dropdown-language nav-item">
+        <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="flag-icon @GetFlag(currentCulture)"></i>
+            <span class="selected-language">@GetName(currentCulture)</span>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+            <div class="arrow_box">
+                @if (supportedCultures != null)
+                {
+                    @foreach (var culture in supportedCultures)
+                    {
+                        <a class="dropdown-item" href="/Language/SetLanguage?culture=@culture.Name&returnUrl=@Uri.EscapeDataString(returnUrl)">
+                            <i class="flag-icon @GetFlag(culture.Name)"></i> @GetName(culture.Name)
+                        </a>
+                    }
+                }
+            </div>
+        </div>
+    </li>
+</ul>
